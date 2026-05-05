@@ -1,6 +1,6 @@
 <svg width="1000" height="620" viewBox="0 0 1000 620" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
   <title id="title">nariokeith Monaco contribution circuit</title>
-  <desc id="desc">A 3D Monaco style circuit showing 33 real GitHub contributions as raised city blocks.</desc>
+  <desc id="desc">A 3D Monaco style circuit showing 34 real GitHub contributions as raised city blocks.</desc>
   <style>
     .title { font: 800 28px Arial, sans-serif; letter-spacing: 3px; fill: #f0f6fc; }
     .subtitle { font: 600 12px Arial, sans-serif; letter-spacing: 2px; fill: #8b949e; }
@@ -840,7 +840,7 @@
   <path d="M826 131l-7 4v3l7 -4z" fill="#000000"/>
 </g>
 <g>
-  <title>2026-05-05: 13 contributions</title>
+  <title>2026-05-05: 14 contributions</title>
   <path d="M842 104l7 -4l7 4l-7 4z" fill="#39d353"/>
   <path d="M842 104l7 4v30l-7 -4z" fill="#1bb535"/>
   <path d="M856 104l-7 4v30l7 -4z" fill="#09a323"/>
@@ -1009,9 +1009,9 @@
 </g>
 <g>
   <title>2025-05-21: 5 contributions</title>
-  <path d="M92 137l7 -4l7 4l-7 4z" fill="#006d32"/>
-  <path d="M92 137l7 4v17l-7 -4z" fill="#004f14"/>
-  <path d="M106 137l-7 4v17l7 -4z" fill="#003d02"/>
+  <path d="M92 138l7 -4l7 4l-7 4z" fill="#006d32"/>
+  <path d="M92 138l7 4v16l-7 -4z" fill="#004f14"/>
+  <path d="M106 138l-7 4v16l7 -4z" fill="#003d02"/>
 </g>
 <g>
   <title>2025-06-04: 1 contribution</title>
@@ -2095,9 +2095,9 @@
 </g>
 <g>
   <title>2025-05-17: 6 contributions</title>
-  <path d="M77 197l7 -4l7 4l-7 4z" fill="#006d32"/>
-  <path d="M77 197l7 4v19l-7 -4z" fill="#004f14"/>
-  <path d="M91 197l-7 4v19l7 -4z" fill="#003d02"/>
+  <path d="M77 198l7 -4l7 4l-7 4z" fill="#006d32"/>
+  <path d="M77 198l7 4v18l-7 -4z" fill="#004f14"/>
+  <path d="M91 198l-7 4v18l7 -4z" fill="#003d02"/>
 </g>
 <g>
   <title>2025-05-31: 0 contributions</title>
@@ -2303,6 +2303,6 @@
 <text x="709" y="554" class="month">Mar</text>
 <text x="784" y="554" class="month">Apr</text>
 <text x="844" y="554" class="month">May</text>
-  <text x="52" y="590" class="label">33 contributions</text>
-  <text x="805" y="590" text-anchor="end" class="muted">best day: 2026-05-05 / 13</text>
+  <text x="52" y="590" class="label">34 contributions</text>
+  <text x="805" y="590" text-anchor="end" class="muted">best day: 2026-05-05 / 14</text>
 </svg>
