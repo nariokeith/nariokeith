@@ -26,6 +26,6 @@
 
 ---
 
-## 🏆 Contribution Race
+## 🏆 Monaco Contribution Circuit
 
 ![](./dist/f1-race.svg)

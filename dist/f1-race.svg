@@ -1,1159 +1,2308 @@
-<svg width="930" height="210" viewBox="0 0 930 210" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
-  <title id="title">nariokeith F1 contribution race</title>
-  <desc id="desc">An animated F1 car racing across 32 GitHub contributions.</desc>
+<svg width="1000" height="620" viewBox="0 0 1000 620" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
+  <title id="title">nariokeith Monaco contribution circuit</title>
+  <desc id="desc">A 3D Monaco style circuit showing 33 real GitHub contributions as raised city blocks.</desc>
   <style>
-    .label { font: 600 14px Arial, sans-serif; fill: #f0f6fc; }
-    .muted { font: 500 11px Arial, sans-serif; fill: #8b949e; }
-    .line { stroke-dasharray: 14 10; animation: dash 1.1s linear infinite; }
-    @keyframes dash { to { stroke-dashoffset: -24; } }
+    .title { font: 800 28px Arial, sans-serif; letter-spacing: 3px; fill: #f0f6fc; }
+    .subtitle { font: 600 12px Arial, sans-serif; letter-spacing: 2px; fill: #8b949e; }
+    .label { font: 700 14px Arial, sans-serif; fill: #f0f6fc; }
+    .muted { font: 600 11px Arial, sans-serif; fill: #8b949e; }
+    .month { font: 600 10px Arial, sans-serif; fill: #8b949e; }
+    .pulse { animation: pulse 1.4s ease-in-out infinite; transform-origin: center; }
+    .dash { stroke-dasharray: 18 14; animation: dash 1.2s linear infinite; }
+    @keyframes dash { to { stroke-dashoffset: -32; } }
+    @keyframes pulse { 0%, 100% { opacity: 0.75; } 50% { opacity: 1; } }
   </style>
+  <defs>
+    <linearGradient id="sea" x1="660" y1="300" x2="970" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#092536"/>
+      <stop offset="1" stop-color="#05131d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(520 280) rotate(90) scale(260 420)">
+      <stop stop-color="#e10600" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#e10600" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
 
-  <rect width="930" height="210" rx="14" fill="#0d1117"/>
-  <rect x="1" y="1" width="928" height="208" rx="13" stroke="#30363d"/>
+  <rect width="1000" height="620" rx="18" fill="#0d1117"/>
+  <rect x="1" y="1" width="998" height="618" rx="17" stroke="#30363d"/>
+  <path d="M632 354C710 306 786 298 872 336C956 374 984 466 950 596H624C584 494 574 398 632 354Z" fill="url(#sea)" opacity="0.92"/>
+  <rect width="1000" height="620" rx="18" fill="url(#glow)"/>
 
-  <text x="34" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">May</text>
-<text x="98" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Jun</text>
-<text x="178" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Jul</text>
-<text x="242" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Aug</text>
-<text x="322" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Sep</text>
-<text x="386" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Oct</text>
-<text x="450" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Nov</text>
-<text x="530" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Dec</text>
-<text x="594" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Jan</text>
-<text x="658" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Feb</text>
-<text x="722" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Mar</text>
-<text x="802" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Apr</text>
-<text x="866" y="26" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">May</text>
-  <rect x="34" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <text x="50%" y="42" text-anchor="middle" class="title">MONTE CARLO</text>
+  <text x="50%" y="64" text-anchor="middle" class="subtitle">MONACO CONTRIBUTION CIRCUIT</text>
+
+  <g transform="matrix(0.82,0,-0.068,0.78,104,82)">
+    <path d="M54 86L184 42L318 74L438 42L572 76L714 44L858 78" stroke="#3d4652" stroke-width="2" fill="none" opacity="0.58"/>
+<path d="M72 164L210 122L360 156L492 118L630 146L812 116" stroke="#3d4652" stroke-width="2" fill="none" opacity="0.58"/>
+<path d="M54 244L220 206L352 226L514 198L672 230L858 194" stroke="#3d4652" stroke-width="2" fill="none" opacity="0.58"/>
+<path d="M98 336L254 292L410 320L566 278L718 318L876 288" stroke="#3d4652" stroke-width="2" fill="none" opacity="0.58"/>
+<path d="M114 420L284 386L450 408L620 366L806 408" stroke="#3d4652" stroke-width="2" fill="none" opacity="0.58"/>
+<path d="M164 52L126 150L172 236L132 332L204 466" stroke="#3d4652" stroke-width="2" fill="none" opacity="0.58"/>
+<path d="M296 58L274 138L318 210L286 306L340 438" stroke="#3d4652" stroke-width="2" fill="none" opacity="0.58"/>
+<path d="M440 50L402 148L470 242L424 344L488 452" stroke="#3d4652" stroke-width="2" fill="none" opacity="0.58"/>
+<path d="M596 64L548 160L624 250L570 354L648 474" stroke="#3d4652" stroke-width="2" fill="none" opacity="0.58"/>
+<path d="M754 54L694 166L784 252L734 356L824 452" stroke="#3d4652" stroke-width="2" fill="none" opacity="0.58"/>
+
+    <g opacity="0.82">
+      <g>
   <title>2025-05-04: 0 contributions</title>
-</rect>
-<rect x="34" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-05: 0 contributions</title>
-</rect>
-<rect x="34" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-06: 0 contributions</title>
-</rect>
-<rect x="34" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-07: 0 contributions</title>
-</rect>
-<rect x="34" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-08: 0 contributions</title>
-</rect>
-<rect x="34" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-09: 0 contributions</title>
-</rect>
-<rect x="34" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-10: 0 contributions</title>
-</rect>
-<rect x="50" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-11: 0 contributions</title>
-</rect>
-<rect x="50" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-12: 0 contributions</title>
-</rect>
-<rect x="50" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-13: 0 contributions</title>
-</rect>
-<rect x="50" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-14: 0 contributions</title>
-</rect>
-<rect x="50" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-15: 0 contributions</title>
-</rect>
-<rect x="50" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-16: 0 contributions</title>
-</rect>
-<rect x="50" y="138" width="12" height="12" rx="3" fill="#006d32">
-  <title>2025-05-17: 6 contributions</title>
-</rect>
-<rect x="66" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M62 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M62 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M76 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-05-18: 0 contributions</title>
-</rect>
-<rect x="66" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-19: 0 contributions</title>
-</rect>
-<rect x="66" y="74" width="12" height="12" rx="3" fill="#0e4429">
-  <title>2025-05-20: 2 contributions</title>
-</rect>
-<rect x="66" y="90" width="12" height="12" rx="3" fill="#006d32">
-  <title>2025-05-21: 5 contributions</title>
-</rect>
-<rect x="66" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-22: 0 contributions</title>
-</rect>
-<rect x="66" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-23: 0 contributions</title>
-</rect>
-<rect x="66" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-24: 0 contributions</title>
-</rect>
-<rect x="82" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-25: 0 contributions</title>
-</rect>
-<rect x="82" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-26: 0 contributions</title>
-</rect>
-<rect x="82" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-27: 0 contributions</title>
-</rect>
-<rect x="82" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-28: 0 contributions</title>
-</rect>
-<rect x="82" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-29: 0 contributions</title>
-</rect>
-<rect x="82" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-30: 0 contributions</title>
-</rect>
-<rect x="82" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-05-31: 0 contributions</title>
-</rect>
-<rect x="98" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M92 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M92 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M106 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-06-01: 0 contributions</title>
-</rect>
-<rect x="98" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-02: 0 contributions</title>
-</rect>
-<rect x="98" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-03: 0 contributions</title>
-</rect>
-<rect x="98" y="90" width="12" height="12" rx="3" fill="#0e4429">
-  <title>2025-06-04: 1 contribution</title>
-</rect>
-<rect x="98" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-05: 0 contributions</title>
-</rect>
-<rect x="98" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-06: 0 contributions</title>
-</rect>
-<rect x="98" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-07: 0 contributions</title>
-</rect>
-<rect x="114" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-08: 0 contributions</title>
-</rect>
-<rect x="114" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-09: 0 contributions</title>
-</rect>
-<rect x="114" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-10: 0 contributions</title>
-</rect>
-<rect x="114" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-11: 0 contributions</title>
-</rect>
-<rect x="114" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-12: 0 contributions</title>
-</rect>
-<rect x="114" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-13: 0 contributions</title>
-</rect>
-<rect x="114" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-14: 0 contributions</title>
-</rect>
-<rect x="130" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M122 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M122 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M136 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-06-15: 0 contributions</title>
-</rect>
-<rect x="130" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-16: 0 contributions</title>
-</rect>
-<rect x="130" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-17: 0 contributions</title>
-</rect>
-<rect x="130" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-18: 0 contributions</title>
-</rect>
-<rect x="130" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-19: 0 contributions</title>
-</rect>
-<rect x="130" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-20: 0 contributions</title>
-</rect>
-<rect x="130" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-21: 0 contributions</title>
-</rect>
-<rect x="146" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-22: 0 contributions</title>
-</rect>
-<rect x="146" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-23: 0 contributions</title>
-</rect>
-<rect x="146" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-24: 0 contributions</title>
-</rect>
-<rect x="146" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-25: 0 contributions</title>
-</rect>
-<rect x="146" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-26: 0 contributions</title>
-</rect>
-<rect x="146" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-27: 0 contributions</title>
-</rect>
-<rect x="146" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-28: 0 contributions</title>
-</rect>
-<rect x="162" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M152 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M152 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M166 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-06-29: 0 contributions</title>
-</rect>
-<rect x="162" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-06-30: 0 contributions</title>
-</rect>
-<rect x="162" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-01: 0 contributions</title>
-</rect>
-<rect x="162" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-02: 0 contributions</title>
-</rect>
-<rect x="162" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-03: 0 contributions</title>
-</rect>
-<rect x="162" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-04: 0 contributions</title>
-</rect>
-<rect x="162" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-05: 0 contributions</title>
-</rect>
-<rect x="178" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-06: 0 contributions</title>
-</rect>
-<rect x="178" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-07: 0 contributions</title>
-</rect>
-<rect x="178" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-08: 0 contributions</title>
-</rect>
-<rect x="178" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-09: 0 contributions</title>
-</rect>
-<rect x="178" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-10: 0 contributions</title>
-</rect>
-<rect x="178" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-11: 0 contributions</title>
-</rect>
-<rect x="178" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-12: 0 contributions</title>
-</rect>
-<rect x="194" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M182 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M182 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M196 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-07-13: 0 contributions</title>
-</rect>
-<rect x="194" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-14: 0 contributions</title>
-</rect>
-<rect x="194" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-15: 0 contributions</title>
-</rect>
-<rect x="194" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-16: 0 contributions</title>
-</rect>
-<rect x="194" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-17: 0 contributions</title>
-</rect>
-<rect x="194" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-18: 0 contributions</title>
-</rect>
-<rect x="194" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-19: 0 contributions</title>
-</rect>
-<rect x="210" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-20: 0 contributions</title>
-</rect>
-<rect x="210" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-21: 0 contributions</title>
-</rect>
-<rect x="210" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-22: 0 contributions</title>
-</rect>
-<rect x="210" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-23: 0 contributions</title>
-</rect>
-<rect x="210" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-24: 0 contributions</title>
-</rect>
-<rect x="210" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-25: 0 contributions</title>
-</rect>
-<rect x="210" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-26: 0 contributions</title>
-</rect>
-<rect x="226" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M212 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M212 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M226 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-07-27: 0 contributions</title>
-</rect>
-<rect x="226" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-28: 0 contributions</title>
-</rect>
-<rect x="226" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-29: 0 contributions</title>
-</rect>
-<rect x="226" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-30: 0 contributions</title>
-</rect>
-<rect x="226" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-07-31: 0 contributions</title>
-</rect>
-<rect x="226" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-01: 0 contributions</title>
-</rect>
-<rect x="226" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-02: 0 contributions</title>
-</rect>
-<rect x="242" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-03: 0 contributions</title>
-</rect>
-<rect x="242" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-04: 0 contributions</title>
-</rect>
-<rect x="242" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-05: 0 contributions</title>
-</rect>
-<rect x="242" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-06: 0 contributions</title>
-</rect>
-<rect x="242" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-07: 0 contributions</title>
-</rect>
-<rect x="242" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-08: 0 contributions</title>
-</rect>
-<rect x="242" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-09: 0 contributions</title>
-</rect>
-<rect x="258" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M242 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M242 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M256 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-08-10: 0 contributions</title>
-</rect>
-<rect x="258" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-11: 0 contributions</title>
-</rect>
-<rect x="258" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-12: 0 contributions</title>
-</rect>
-<rect x="258" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-13: 0 contributions</title>
-</rect>
-<rect x="258" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-14: 0 contributions</title>
-</rect>
-<rect x="258" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-15: 0 contributions</title>
-</rect>
-<rect x="258" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-16: 0 contributions</title>
-</rect>
-<rect x="274" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-17: 0 contributions</title>
-</rect>
-<rect x="274" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-18: 0 contributions</title>
-</rect>
-<rect x="274" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-19: 0 contributions</title>
-</rect>
-<rect x="274" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-20: 0 contributions</title>
-</rect>
-<rect x="274" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-21: 0 contributions</title>
-</rect>
-<rect x="274" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-22: 0 contributions</title>
-</rect>
-<rect x="274" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-23: 0 contributions</title>
-</rect>
-<rect x="290" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M272 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M272 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M286 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-08-24: 0 contributions</title>
-</rect>
-<rect x="290" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-25: 0 contributions</title>
-</rect>
-<rect x="290" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-26: 0 contributions</title>
-</rect>
-<rect x="290" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-27: 0 contributions</title>
-</rect>
-<rect x="290" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-28: 0 contributions</title>
-</rect>
-<rect x="290" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-29: 0 contributions</title>
-</rect>
-<rect x="290" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-30: 0 contributions</title>
-</rect>
-<rect x="306" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-08-31: 0 contributions</title>
-</rect>
-<rect x="306" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-01: 0 contributions</title>
-</rect>
-<rect x="306" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-02: 0 contributions</title>
-</rect>
-<rect x="306" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-03: 0 contributions</title>
-</rect>
-<rect x="306" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-04: 0 contributions</title>
-</rect>
-<rect x="306" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-05: 0 contributions</title>
-</rect>
-<rect x="306" y="138" width="12" height="12" rx="3" fill="#0e4429">
-  <title>2025-09-06: 2 contributions</title>
-</rect>
-<rect x="322" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M302 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M302 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M316 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-09-07: 0 contributions</title>
-</rect>
-<rect x="322" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-08: 0 contributions</title>
-</rect>
-<rect x="322" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-09: 0 contributions</title>
-</rect>
-<rect x="322" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-10: 0 contributions</title>
-</rect>
-<rect x="322" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-11: 0 contributions</title>
-</rect>
-<rect x="322" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-12: 0 contributions</title>
-</rect>
-<rect x="322" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-13: 0 contributions</title>
-</rect>
-<rect x="338" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-14: 0 contributions</title>
-</rect>
-<rect x="338" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-15: 0 contributions</title>
-</rect>
-<rect x="338" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-16: 0 contributions</title>
-</rect>
-<rect x="338" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-17: 0 contributions</title>
-</rect>
-<rect x="338" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-18: 0 contributions</title>
-</rect>
-<rect x="338" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-19: 0 contributions</title>
-</rect>
-<rect x="338" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-20: 0 contributions</title>
-</rect>
-<rect x="354" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M332 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M332 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M346 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-09-21: 0 contributions</title>
-</rect>
-<rect x="354" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-22: 0 contributions</title>
-</rect>
-<rect x="354" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-23: 0 contributions</title>
-</rect>
-<rect x="354" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-24: 0 contributions</title>
-</rect>
-<rect x="354" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-25: 0 contributions</title>
-</rect>
-<rect x="354" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-26: 0 contributions</title>
-</rect>
-<rect x="354" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-27: 0 contributions</title>
-</rect>
-<rect x="370" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-28: 0 contributions</title>
-</rect>
-<rect x="370" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-29: 0 contributions</title>
-</rect>
-<rect x="370" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-09-30: 0 contributions</title>
-</rect>
-<rect x="370" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-01: 0 contributions</title>
-</rect>
-<rect x="370" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-02: 0 contributions</title>
-</rect>
-<rect x="370" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-03: 0 contributions</title>
-</rect>
-<rect x="370" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-04: 0 contributions</title>
-</rect>
-<rect x="386" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M362 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M362 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M376 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-10-05: 0 contributions</title>
-</rect>
-<rect x="386" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-06: 0 contributions</title>
-</rect>
-<rect x="386" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-07: 0 contributions</title>
-</rect>
-<rect x="386" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-08: 0 contributions</title>
-</rect>
-<rect x="386" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-09: 0 contributions</title>
-</rect>
-<rect x="386" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-10: 0 contributions</title>
-</rect>
-<rect x="386" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-11: 0 contributions</title>
-</rect>
-<rect x="402" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-12: 0 contributions</title>
-</rect>
-<rect x="402" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-13: 0 contributions</title>
-</rect>
-<rect x="402" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-14: 0 contributions</title>
-</rect>
-<rect x="402" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-15: 0 contributions</title>
-</rect>
-<rect x="402" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-16: 0 contributions</title>
-</rect>
-<rect x="402" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-17: 0 contributions</title>
-</rect>
-<rect x="402" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-18: 0 contributions</title>
-</rect>
-<rect x="418" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M392 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M392 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M406 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-10-19: 0 contributions</title>
-</rect>
-<rect x="418" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-20: 0 contributions</title>
-</rect>
-<rect x="418" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-21: 0 contributions</title>
-</rect>
-<rect x="418" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-22: 0 contributions</title>
-</rect>
-<rect x="418" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-23: 0 contributions</title>
-</rect>
-<rect x="418" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-24: 0 contributions</title>
-</rect>
-<rect x="418" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-25: 0 contributions</title>
-</rect>
-<rect x="434" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-26: 0 contributions</title>
-</rect>
-<rect x="434" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-27: 0 contributions</title>
-</rect>
-<rect x="434" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-28: 0 contributions</title>
-</rect>
-<rect x="434" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-29: 0 contributions</title>
-</rect>
-<rect x="434" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-30: 0 contributions</title>
-</rect>
-<rect x="434" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-10-31: 0 contributions</title>
-</rect>
-<rect x="434" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-01: 0 contributions</title>
-</rect>
-<rect x="450" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M422 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M422 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M436 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-11-02: 0 contributions</title>
-</rect>
-<rect x="450" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-03: 0 contributions</title>
-</rect>
-<rect x="450" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-04: 0 contributions</title>
-</rect>
-<rect x="450" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-05: 0 contributions</title>
-</rect>
-<rect x="450" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-06: 0 contributions</title>
-</rect>
-<rect x="450" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-07: 0 contributions</title>
-</rect>
-<rect x="450" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-08: 0 contributions</title>
-</rect>
-<rect x="466" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-09: 0 contributions</title>
-</rect>
-<rect x="466" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-10: 0 contributions</title>
-</rect>
-<rect x="466" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-11: 0 contributions</title>
-</rect>
-<rect x="466" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-12: 0 contributions</title>
-</rect>
-<rect x="466" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-13: 0 contributions</title>
-</rect>
-<rect x="466" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-14: 0 contributions</title>
-</rect>
-<rect x="466" y="138" width="12" height="12" rx="3" fill="#0e4429">
-  <title>2025-11-15: 2 contributions</title>
-</rect>
-<rect x="482" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M452 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M452 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M466 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-11-16: 0 contributions</title>
-</rect>
-<rect x="482" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-17: 0 contributions</title>
-</rect>
-<rect x="482" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-18: 0 contributions</title>
-</rect>
-<rect x="482" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-19: 0 contributions</title>
-</rect>
-<rect x="482" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-20: 0 contributions</title>
-</rect>
-<rect x="482" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-21: 0 contributions</title>
-</rect>
-<rect x="482" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-22: 0 contributions</title>
-</rect>
-<rect x="498" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-23: 0 contributions</title>
-</rect>
-<rect x="498" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-24: 0 contributions</title>
-</rect>
-<rect x="498" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-25: 0 contributions</title>
-</rect>
-<rect x="498" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-26: 0 contributions</title>
-</rect>
-<rect x="498" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-27: 0 contributions</title>
-</rect>
-<rect x="498" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-28: 0 contributions</title>
-</rect>
-<rect x="498" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-11-29: 0 contributions</title>
-</rect>
-<rect x="514" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M482 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M482 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M496 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-11-30: 0 contributions</title>
-</rect>
-<rect x="514" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-01: 0 contributions</title>
-</rect>
-<rect x="514" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-02: 0 contributions</title>
-</rect>
-<rect x="514" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-03: 0 contributions</title>
-</rect>
-<rect x="514" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-04: 0 contributions</title>
-</rect>
-<rect x="514" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-05: 0 contributions</title>
-</rect>
-<rect x="514" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-06: 0 contributions</title>
-</rect>
-<rect x="530" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-07: 0 contributions</title>
-</rect>
-<rect x="530" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-08: 0 contributions</title>
-</rect>
-<rect x="530" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-09: 0 contributions</title>
-</rect>
-<rect x="530" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-10: 0 contributions</title>
-</rect>
-<rect x="530" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-11: 0 contributions</title>
-</rect>
-<rect x="530" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-12: 0 contributions</title>
-</rect>
-<rect x="530" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-13: 0 contributions</title>
-</rect>
-<rect x="546" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M512 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M512 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M526 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-12-14: 0 contributions</title>
-</rect>
-<rect x="546" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-15: 0 contributions</title>
-</rect>
-<rect x="546" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-16: 0 contributions</title>
-</rect>
-<rect x="546" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-17: 0 contributions</title>
-</rect>
-<rect x="546" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-18: 0 contributions</title>
-</rect>
-<rect x="546" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-19: 0 contributions</title>
-</rect>
-<rect x="546" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-20: 0 contributions</title>
-</rect>
-<rect x="562" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-21: 0 contributions</title>
-</rect>
-<rect x="562" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-22: 0 contributions</title>
-</rect>
-<rect x="562" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-23: 0 contributions</title>
-</rect>
-<rect x="562" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-24: 0 contributions</title>
-</rect>
-<rect x="562" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-25: 0 contributions</title>
-</rect>
-<rect x="562" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-26: 0 contributions</title>
-</rect>
-<rect x="562" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-27: 0 contributions</title>
-</rect>
-<rect x="578" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M542 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M542 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M556 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2025-12-28: 0 contributions</title>
-</rect>
-<rect x="578" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-29: 0 contributions</title>
-</rect>
-<rect x="578" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-30: 0 contributions</title>
-</rect>
-<rect x="578" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2025-12-31: 0 contributions</title>
-</rect>
-<rect x="578" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-01: 0 contributions</title>
-</rect>
-<rect x="578" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-02: 0 contributions</title>
-</rect>
-<rect x="578" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-03: 0 contributions</title>
-</rect>
-<rect x="594" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-04: 0 contributions</title>
-</rect>
-<rect x="594" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-05: 0 contributions</title>
-</rect>
-<rect x="594" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-06: 0 contributions</title>
-</rect>
-<rect x="594" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-07: 0 contributions</title>
-</rect>
-<rect x="594" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-08: 0 contributions</title>
-</rect>
-<rect x="594" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-09: 0 contributions</title>
-</rect>
-<rect x="594" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-10: 0 contributions</title>
-</rect>
-<rect x="610" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M572 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M572 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M586 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2026-01-11: 0 contributions</title>
-</rect>
-<rect x="610" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-12: 0 contributions</title>
-</rect>
-<rect x="610" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-13: 0 contributions</title>
-</rect>
-<rect x="610" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-14: 0 contributions</title>
-</rect>
-<rect x="610" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-15: 0 contributions</title>
-</rect>
-<rect x="610" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-16: 0 contributions</title>
-</rect>
-<rect x="610" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-17: 0 contributions</title>
-</rect>
-<rect x="626" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-18: 0 contributions</title>
-</rect>
-<rect x="626" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-19: 0 contributions</title>
-</rect>
-<rect x="626" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-20: 0 contributions</title>
-</rect>
-<rect x="626" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-21: 0 contributions</title>
-</rect>
-<rect x="626" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-22: 0 contributions</title>
-</rect>
-<rect x="626" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-23: 0 contributions</title>
-</rect>
-<rect x="626" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-24: 0 contributions</title>
-</rect>
-<rect x="642" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M602 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M602 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M616 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2026-01-25: 0 contributions</title>
-</rect>
-<rect x="642" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-26: 0 contributions</title>
-</rect>
-<rect x="642" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-27: 0 contributions</title>
-</rect>
-<rect x="642" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-28: 0 contributions</title>
-</rect>
-<rect x="642" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-29: 0 contributions</title>
-</rect>
-<rect x="642" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-30: 0 contributions</title>
-</rect>
-<rect x="642" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-01-31: 0 contributions</title>
-</rect>
-<rect x="658" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-01: 0 contributions</title>
-</rect>
-<rect x="658" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-02: 0 contributions</title>
-</rect>
-<rect x="658" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-03: 0 contributions</title>
-</rect>
-<rect x="658" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-04: 0 contributions</title>
-</rect>
-<rect x="658" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-05: 0 contributions</title>
-</rect>
-<rect x="658" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-06: 0 contributions</title>
-</rect>
-<rect x="658" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-07: 0 contributions</title>
-</rect>
-<rect x="674" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M632 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M632 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M646 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2026-02-08: 0 contributions</title>
-</rect>
-<rect x="674" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-09: 0 contributions</title>
-</rect>
-<rect x="674" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-10: 0 contributions</title>
-</rect>
-<rect x="674" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-11: 0 contributions</title>
-</rect>
-<rect x="674" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-12: 0 contributions</title>
-</rect>
-<rect x="674" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-13: 0 contributions</title>
-</rect>
-<rect x="674" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-14: 0 contributions</title>
-</rect>
-<rect x="690" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-15: 0 contributions</title>
-</rect>
-<rect x="690" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-16: 0 contributions</title>
-</rect>
-<rect x="690" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-17: 0 contributions</title>
-</rect>
-<rect x="690" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-18: 0 contributions</title>
-</rect>
-<rect x="690" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-19: 0 contributions</title>
-</rect>
-<rect x="690" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-20: 0 contributions</title>
-</rect>
-<rect x="690" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-21: 0 contributions</title>
-</rect>
-<rect x="706" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M662 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M662 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M676 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2026-02-22: 0 contributions</title>
-</rect>
-<rect x="706" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-23: 0 contributions</title>
-</rect>
-<rect x="706" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-24: 0 contributions</title>
-</rect>
-<rect x="706" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-25: 0 contributions</title>
-</rect>
-<rect x="706" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-26: 0 contributions</title>
-</rect>
-<rect x="706" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-27: 0 contributions</title>
-</rect>
-<rect x="706" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-02-28: 0 contributions</title>
-</rect>
-<rect x="722" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-01: 0 contributions</title>
-</rect>
-<rect x="722" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-02: 0 contributions</title>
-</rect>
-<rect x="722" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-03: 0 contributions</title>
-</rect>
-<rect x="722" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-04: 0 contributions</title>
-</rect>
-<rect x="722" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-05: 0 contributions</title>
-</rect>
-<rect x="722" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-06: 0 contributions</title>
-</rect>
-<rect x="722" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-07: 0 contributions</title>
-</rect>
-<rect x="738" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M692 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M692 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M706 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2026-03-08: 0 contributions</title>
-</rect>
-<rect x="738" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-09: 0 contributions</title>
-</rect>
-<rect x="738" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-10: 0 contributions</title>
-</rect>
-<rect x="738" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-11: 0 contributions</title>
-</rect>
-<rect x="738" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-12: 0 contributions</title>
-</rect>
-<rect x="738" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-13: 0 contributions</title>
-</rect>
-<rect x="738" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-14: 0 contributions</title>
-</rect>
-<rect x="754" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-15: 0 contributions</title>
-</rect>
-<rect x="754" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-16: 0 contributions</title>
-</rect>
-<rect x="754" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-17: 0 contributions</title>
-</rect>
-<rect x="754" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-18: 0 contributions</title>
-</rect>
-<rect x="754" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-19: 0 contributions</title>
-</rect>
-<rect x="754" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-20: 0 contributions</title>
-</rect>
-<rect x="754" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-21: 0 contributions</title>
-</rect>
-<rect x="770" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M722 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M722 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M736 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2026-03-22: 0 contributions</title>
-</rect>
-<rect x="770" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-23: 0 contributions</title>
-</rect>
-<rect x="770" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-24: 0 contributions</title>
-</rect>
-<rect x="770" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-25: 0 contributions</title>
-</rect>
-<rect x="770" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-26: 0 contributions</title>
-</rect>
-<rect x="770" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-27: 0 contributions</title>
-</rect>
-<rect x="770" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-28: 0 contributions</title>
-</rect>
-<rect x="786" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-29: 0 contributions</title>
-</rect>
-<rect x="786" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-30: 0 contributions</title>
-</rect>
-<rect x="786" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-03-31: 0 contributions</title>
-</rect>
-<rect x="786" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-01: 0 contributions</title>
-</rect>
-<rect x="786" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-02: 0 contributions</title>
-</rect>
-<rect x="786" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-03: 0 contributions</title>
-</rect>
-<rect x="786" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-04: 0 contributions</title>
-</rect>
-<rect x="802" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M752 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M752 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M766 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2026-04-05: 0 contributions</title>
-</rect>
-<rect x="802" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-06: 0 contributions</title>
-</rect>
-<rect x="802" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-07: 0 contributions</title>
-</rect>
-<rect x="802" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-08: 0 contributions</title>
-</rect>
-<rect x="802" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-09: 0 contributions</title>
-</rect>
-<rect x="802" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-10: 0 contributions</title>
-</rect>
-<rect x="802" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-11: 0 contributions</title>
-</rect>
-<rect x="818" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-12: 0 contributions</title>
-</rect>
-<rect x="818" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-13: 0 contributions</title>
-</rect>
-<rect x="818" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-14: 0 contributions</title>
-</rect>
-<rect x="818" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-15: 0 contributions</title>
-</rect>
-<rect x="818" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-16: 0 contributions</title>
-</rect>
-<rect x="818" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-17: 0 contributions</title>
-</rect>
-<rect x="818" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-18: 0 contributions</title>
-</rect>
-<rect x="834" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M782 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M782 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M796 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2026-04-19: 0 contributions</title>
-</rect>
-<rect x="834" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-20: 0 contributions</title>
-</rect>
-<rect x="834" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-21: 0 contributions</title>
-</rect>
-<rect x="834" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-22: 0 contributions</title>
-</rect>
-<rect x="834" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-23: 0 contributions</title>
-</rect>
-<rect x="834" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-24: 0 contributions</title>
-</rect>
-<rect x="834" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-25: 0 contributions</title>
-</rect>
-<rect x="850" y="42" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-26: 0 contributions</title>
-</rect>
-<rect x="850" y="58" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-27: 0 contributions</title>
-</rect>
-<rect x="850" y="74" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-28: 0 contributions</title>
-</rect>
-<rect x="850" y="90" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-29: 0 contributions</title>
-</rect>
-<rect x="850" y="106" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-04-30: 0 contributions</title>
-</rect>
-<rect x="850" y="122" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-05-01: 0 contributions</title>
-</rect>
-<rect x="850" y="138" width="12" height="12" rx="3" fill="#161b22">
-  <title>2026-05-02: 0 contributions</title>
-</rect>
-<rect x="866" y="42" width="12" height="12" rx="3" fill="#161b22">
+  <path d="M812 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M812 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M826 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2026-05-03: 0 contributions</title>
-</rect>
-<rect x="866" y="58" width="12" height="12" rx="3" fill="#0e4429">
+  <path d="M842 91l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M842 91l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M856 91l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-11: 0 contributions</title>
+  <path d="M77 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M77 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M91 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-25: 0 contributions</title>
+  <path d="M107 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M107 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M121 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-08: 0 contributions</title>
+  <path d="M137 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M137 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M151 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-22: 0 contributions</title>
+  <path d="M167 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M167 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M181 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-06: 0 contributions</title>
+  <path d="M197 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M197 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M211 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-20: 0 contributions</title>
+  <path d="M227 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M227 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M241 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-03: 0 contributions</title>
+  <path d="M257 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M257 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M271 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-17: 0 contributions</title>
+  <path d="M287 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M287 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M301 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-31: 0 contributions</title>
+  <path d="M317 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M317 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M331 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-14: 0 contributions</title>
+  <path d="M347 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M347 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M361 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-28: 0 contributions</title>
+  <path d="M377 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M377 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M391 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-12: 0 contributions</title>
+  <path d="M407 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M407 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M421 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-26: 0 contributions</title>
+  <path d="M437 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M437 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M451 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-09: 0 contributions</title>
+  <path d="M467 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M467 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M481 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-23: 0 contributions</title>
+  <path d="M497 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M497 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M511 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-07: 0 contributions</title>
+  <path d="M527 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M527 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M541 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-21: 0 contributions</title>
+  <path d="M557 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M557 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M571 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-04: 0 contributions</title>
+  <path d="M587 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M587 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M601 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-18: 0 contributions</title>
+  <path d="M617 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M617 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M631 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-01: 0 contributions</title>
+  <path d="M647 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M647 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M661 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-15: 0 contributions</title>
+  <path d="M677 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M677 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M691 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-01: 0 contributions</title>
+  <path d="M707 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M707 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M721 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-15: 0 contributions</title>
+  <path d="M737 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M737 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M751 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-29: 0 contributions</title>
+  <path d="M767 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M767 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M781 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-12: 0 contributions</title>
+  <path d="M797 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M797 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M811 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-26: 0 contributions</title>
+  <path d="M827 93l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M827 93l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M841 93l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-05: 0 contributions</title>
+  <path d="M62 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M62 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M76 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-19: 0 contributions</title>
+  <path d="M92 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M92 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M106 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-02: 0 contributions</title>
+  <path d="M122 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M122 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M136 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-16: 0 contributions</title>
+  <path d="M152 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M152 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M166 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-30: 0 contributions</title>
+  <path d="M182 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M182 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M196 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-14: 0 contributions</title>
+  <path d="M212 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M212 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M226 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-28: 0 contributions</title>
+  <path d="M242 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M242 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M256 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-11: 0 contributions</title>
+  <path d="M272 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M272 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M286 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-25: 0 contributions</title>
+  <path d="M302 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M302 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M316 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-08: 0 contributions</title>
+  <path d="M332 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M332 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M346 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-22: 0 contributions</title>
+  <path d="M362 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M362 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M376 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-06: 0 contributions</title>
+  <path d="M392 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M392 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M406 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-20: 0 contributions</title>
+  <path d="M422 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M422 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M436 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-03: 0 contributions</title>
+  <path d="M452 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M452 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M466 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-17: 0 contributions</title>
+  <path d="M482 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M482 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M496 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-01: 0 contributions</title>
+  <path d="M512 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M512 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M526 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-15: 0 contributions</title>
+  <path d="M542 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M542 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M556 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-29: 0 contributions</title>
+  <path d="M572 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M572 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M586 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-12: 0 contributions</title>
+  <path d="M602 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M602 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M616 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-26: 0 contributions</title>
+  <path d="M632 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M632 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M646 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-09: 0 contributions</title>
+  <path d="M662 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M662 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M676 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-23: 0 contributions</title>
+  <path d="M692 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M692 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M706 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-09: 0 contributions</title>
+  <path d="M722 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M722 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M736 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-23: 0 contributions</title>
+  <path d="M752 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M752 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M766 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-06: 0 contributions</title>
+  <path d="M782 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M782 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M796 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-20: 0 contributions</title>
+  <path d="M812 111l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M812 111l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M826 111l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
   <title>2026-05-04: 2 contributions</title>
-</rect>
-<rect x="866" y="74" width="12" height="12" rx="3" fill="#39d353">
-  <title>2026-05-05: 12 contributions</title>
-</rect>
-
-  <path id="race-line" d="M 24 100 C 154 38, 274 172, 404 100 S 654 58, 874 138" stroke="#f0f6fc" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
-  <path d="M 24 100 C 154 38, 274 172, 404 100 S 654 58, 874 138" class="line" stroke="#e10600" stroke-width="3" stroke-linecap="round"/>
-
-  <g transform="translate(884 120)">
-    <rect x="0" y="0" width="10" height="10" fill="#f0f6fc"/>
-    <rect x="10" y="10" width="10" height="10" fill="#f0f6fc"/>
-    <rect x="10" y="0" width="10" height="10" fill="#0d1117"/>
-    <rect x="0" y="10" width="10" height="10" fill="#0d1117"/>
-    <path d="M0 0V42" stroke="#f0f6fc" stroke-width="2"/>
-  </g>
-
-  <g>
-    <animateMotion dur="7s" repeatCount="indefinite" rotate="auto">
-      <mpath href="#race-line" xlink:href="#race-line"/>
-    </animateMotion>
-    <g transform="translate(-25 -10)">
-      <path d="M3 10L14 2H42L57 10L44 18H12L3 10Z" fill="#e10600"/>
-      <path d="M20 6H35L42 10L34 13H20Z" fill="#f0f6fc"/>
-      <path d="M0 10H60" stroke="#15151e" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="15" cy="19" r="5" fill="#010409"/>
-      <circle cx="46" cy="19" r="5" fill="#010409"/>
-      <circle cx="15" cy="19" r="2" fill="#8b949e"/>
-      <circle cx="46" cy="19" r="2" fill="#8b949e"/>
-      <path d="M5 8H-8" stroke="#ffcd00" stroke-width="3" stroke-linecap="round"/>
-      <path d="M5 13H-15" stroke="#ff8700" stroke-width="3" stroke-linecap="round"/>
+  <path d="M842 104l7 -4l7 4l-7 4z" fill="#0e4429"/>
+  <path d="M842 104l7 4v10l-7 -4z" fill="#00260b"/>
+  <path d="M856 104l-7 4v10l7 -4z" fill="#001400"/>
+</g>
+<g>
+  <title>2025-05-12: 0 contributions</title>
+  <path d="M77 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M77 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M91 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-26: 0 contributions</title>
+  <path d="M107 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M107 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M121 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-09: 0 contributions</title>
+  <path d="M137 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M137 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M151 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-23: 0 contributions</title>
+  <path d="M167 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M167 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M181 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-07: 0 contributions</title>
+  <path d="M197 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M197 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M211 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-21: 0 contributions</title>
+  <path d="M227 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M227 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M241 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-04: 0 contributions</title>
+  <path d="M257 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M257 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M271 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-18: 0 contributions</title>
+  <path d="M287 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M287 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M301 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-01: 0 contributions</title>
+  <path d="M317 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M317 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M331 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-15: 0 contributions</title>
+  <path d="M347 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M347 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M361 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-29: 0 contributions</title>
+  <path d="M377 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M377 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M391 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-13: 0 contributions</title>
+  <path d="M407 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M407 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M421 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-27: 0 contributions</title>
+  <path d="M437 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M437 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M451 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-10: 0 contributions</title>
+  <path d="M467 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M467 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M481 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-24: 0 contributions</title>
+  <path d="M497 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M497 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M511 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-08: 0 contributions</title>
+  <path d="M527 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M527 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M541 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-22: 0 contributions</title>
+  <path d="M557 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M557 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M571 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-05: 0 contributions</title>
+  <path d="M587 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M587 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M601 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-19: 0 contributions</title>
+  <path d="M617 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M617 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M631 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-02: 0 contributions</title>
+  <path d="M647 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M647 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M661 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-16: 0 contributions</title>
+  <path d="M677 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M677 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M691 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-02: 0 contributions</title>
+  <path d="M707 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M707 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M721 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-16: 0 contributions</title>
+  <path d="M737 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M737 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M751 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-30: 0 contributions</title>
+  <path d="M767 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M767 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M781 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-13: 0 contributions</title>
+  <path d="M797 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M797 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M811 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-27: 0 contributions</title>
+  <path d="M827 113l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M827 113l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M841 113l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-06: 0 contributions</title>
+  <path d="M62 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M62 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M76 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-20: 2 contributions</title>
+  <path d="M92 124l7 -4l7 4l-7 4z" fill="#0e4429"/>
+  <path d="M92 124l7 4v10l-7 -4z" fill="#00260b"/>
+  <path d="M106 124l-7 4v10l7 -4z" fill="#001400"/>
+</g>
+<g>
+  <title>2025-06-03: 0 contributions</title>
+  <path d="M122 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M122 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M136 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-17: 0 contributions</title>
+  <path d="M152 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M152 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M166 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-01: 0 contributions</title>
+  <path d="M182 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M182 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M196 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-15: 0 contributions</title>
+  <path d="M212 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M212 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M226 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-29: 0 contributions</title>
+  <path d="M242 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M242 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M256 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-12: 0 contributions</title>
+  <path d="M272 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M272 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M286 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-26: 0 contributions</title>
+  <path d="M302 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M302 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M316 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-09: 0 contributions</title>
+  <path d="M332 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M332 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M346 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-23: 0 contributions</title>
+  <path d="M362 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M362 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M376 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-07: 0 contributions</title>
+  <path d="M392 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M392 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M406 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-21: 0 contributions</title>
+  <path d="M422 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M422 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M436 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-04: 0 contributions</title>
+  <path d="M452 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M452 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M466 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-18: 0 contributions</title>
+  <path d="M482 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M482 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M496 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-02: 0 contributions</title>
+  <path d="M512 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M512 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M526 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-16: 0 contributions</title>
+  <path d="M542 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M542 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M556 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-30: 0 contributions</title>
+  <path d="M572 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M572 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M586 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-13: 0 contributions</title>
+  <path d="M602 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M602 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M616 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-27: 0 contributions</title>
+  <path d="M632 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M632 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M646 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-10: 0 contributions</title>
+  <path d="M662 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M662 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M676 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-24: 0 contributions</title>
+  <path d="M692 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M692 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M706 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-10: 0 contributions</title>
+  <path d="M722 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M722 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M736 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-24: 0 contributions</title>
+  <path d="M752 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M752 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M766 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-07: 0 contributions</title>
+  <path d="M782 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M782 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M796 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-21: 0 contributions</title>
+  <path d="M812 131l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M812 131l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M826 131l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-05-05: 13 contributions</title>
+  <path d="M842 104l7 -4l7 4l-7 4z" fill="#39d353"/>
+  <path d="M842 104l7 4v30l-7 -4z" fill="#1bb535"/>
+  <path d="M856 104l-7 4v30l7 -4z" fill="#09a323"/>
+</g>
+<g>
+  <title>2025-05-13: 0 contributions</title>
+  <path d="M77 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M77 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M91 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-27: 0 contributions</title>
+  <path d="M107 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M107 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M121 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-10: 0 contributions</title>
+  <path d="M137 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M137 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M151 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-24: 0 contributions</title>
+  <path d="M167 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M167 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M181 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-08: 0 contributions</title>
+  <path d="M197 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M197 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M211 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-22: 0 contributions</title>
+  <path d="M227 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M227 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M241 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-05: 0 contributions</title>
+  <path d="M257 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M257 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M271 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-19: 0 contributions</title>
+  <path d="M287 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M287 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M301 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-02: 0 contributions</title>
+  <path d="M317 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M317 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M331 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-16: 0 contributions</title>
+  <path d="M347 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M347 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M361 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-30: 0 contributions</title>
+  <path d="M377 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M377 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M391 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-14: 0 contributions</title>
+  <path d="M407 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M407 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M421 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-28: 0 contributions</title>
+  <path d="M437 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M437 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M451 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-11: 0 contributions</title>
+  <path d="M467 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M467 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M481 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-25: 0 contributions</title>
+  <path d="M497 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M497 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M511 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-09: 0 contributions</title>
+  <path d="M527 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M527 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M541 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-23: 0 contributions</title>
+  <path d="M557 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M557 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M571 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-06: 0 contributions</title>
+  <path d="M587 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M587 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M601 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-20: 0 contributions</title>
+  <path d="M617 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M617 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M631 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-03: 0 contributions</title>
+  <path d="M647 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M647 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M661 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-17: 0 contributions</title>
+  <path d="M677 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M677 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M691 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-03: 0 contributions</title>
+  <path d="M707 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M707 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M721 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-17: 0 contributions</title>
+  <path d="M737 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M737 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M751 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-31: 0 contributions</title>
+  <path d="M767 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M767 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M781 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-14: 0 contributions</title>
+  <path d="M797 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M797 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M811 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-28: 0 contributions</title>
+  <path d="M827 133l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M827 133l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M841 133l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-07: 0 contributions</title>
+  <path d="M62 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M62 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M76 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-21: 5 contributions</title>
+  <path d="M92 137l7 -4l7 4l-7 4z" fill="#006d32"/>
+  <path d="M92 137l7 4v17l-7 -4z" fill="#004f14"/>
+  <path d="M106 137l-7 4v17l7 -4z" fill="#003d02"/>
+</g>
+<g>
+  <title>2025-06-04: 1 contribution</title>
+  <path d="M122 146l7 -4l7 4l-7 4z" fill="#0e4429"/>
+  <path d="M122 146l7 4v8l-7 -4z" fill="#00260b"/>
+  <path d="M136 146l-7 4v8l7 -4z" fill="#001400"/>
+</g>
+<g>
+  <title>2025-06-18: 0 contributions</title>
+  <path d="M152 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M152 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M166 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-02: 0 contributions</title>
+  <path d="M182 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M182 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M196 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-16: 0 contributions</title>
+  <path d="M212 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M212 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M226 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-30: 0 contributions</title>
+  <path d="M242 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M242 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M256 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-13: 0 contributions</title>
+  <path d="M272 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M272 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M286 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-27: 0 contributions</title>
+  <path d="M302 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M302 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M316 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-10: 0 contributions</title>
+  <path d="M332 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M332 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M346 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-24: 0 contributions</title>
+  <path d="M362 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M362 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M376 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-08: 0 contributions</title>
+  <path d="M392 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M392 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M406 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-22: 0 contributions</title>
+  <path d="M422 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M422 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M436 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-05: 0 contributions</title>
+  <path d="M452 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M452 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M466 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-19: 0 contributions</title>
+  <path d="M482 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M482 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M496 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-03: 0 contributions</title>
+  <path d="M512 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M512 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M526 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-17: 0 contributions</title>
+  <path d="M542 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M542 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M556 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-31: 0 contributions</title>
+  <path d="M572 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M572 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M586 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-14: 0 contributions</title>
+  <path d="M602 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M602 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M616 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-28: 0 contributions</title>
+  <path d="M632 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M632 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M646 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-11: 0 contributions</title>
+  <path d="M662 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M662 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M676 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-25: 0 contributions</title>
+  <path d="M692 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M692 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M706 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-11: 0 contributions</title>
+  <path d="M722 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M722 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M736 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-25: 0 contributions</title>
+  <path d="M752 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M752 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M766 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-08: 0 contributions</title>
+  <path d="M782 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M782 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M796 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-22: 0 contributions</title>
+  <path d="M812 151l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M812 151l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M826 151l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-14: 0 contributions</title>
+  <path d="M77 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M77 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M91 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-28: 0 contributions</title>
+  <path d="M107 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M107 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M121 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-11: 0 contributions</title>
+  <path d="M137 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M137 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M151 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-25: 0 contributions</title>
+  <path d="M167 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M167 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M181 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-09: 0 contributions</title>
+  <path d="M197 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M197 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M211 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-23: 0 contributions</title>
+  <path d="M227 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M227 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M241 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-06: 0 contributions</title>
+  <path d="M257 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M257 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M271 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-20: 0 contributions</title>
+  <path d="M287 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M287 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M301 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-03: 0 contributions</title>
+  <path d="M317 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M317 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M331 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-17: 0 contributions</title>
+  <path d="M347 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M347 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M361 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-01: 0 contributions</title>
+  <path d="M377 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M377 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M391 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-15: 0 contributions</title>
+  <path d="M407 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M407 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M421 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-29: 0 contributions</title>
+  <path d="M437 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M437 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M451 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-12: 0 contributions</title>
+  <path d="M467 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M467 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M481 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-26: 0 contributions</title>
+  <path d="M497 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M497 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M511 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-10: 0 contributions</title>
+  <path d="M527 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M527 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M541 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-24: 0 contributions</title>
+  <path d="M557 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M557 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M571 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-07: 0 contributions</title>
+  <path d="M587 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M587 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M601 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-21: 0 contributions</title>
+  <path d="M617 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M617 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M631 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-04: 0 contributions</title>
+  <path d="M647 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M647 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M661 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-18: 0 contributions</title>
+  <path d="M677 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M677 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M691 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-04: 0 contributions</title>
+  <path d="M707 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M707 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M721 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-18: 0 contributions</title>
+  <path d="M737 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M737 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M751 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-01: 0 contributions</title>
+  <path d="M767 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M767 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M781 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-15: 0 contributions</title>
+  <path d="M797 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M797 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M811 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-29: 0 contributions</title>
+  <path d="M827 153l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M827 153l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M841 153l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-08: 0 contributions</title>
+  <path d="M62 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M62 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M76 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-22: 0 contributions</title>
+  <path d="M92 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M92 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M106 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-05: 0 contributions</title>
+  <path d="M122 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M122 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M136 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-19: 0 contributions</title>
+  <path d="M152 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M152 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M166 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-03: 0 contributions</title>
+  <path d="M182 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M182 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M196 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-17: 0 contributions</title>
+  <path d="M212 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M212 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M226 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-31: 0 contributions</title>
+  <path d="M242 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M242 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M256 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-14: 0 contributions</title>
+  <path d="M272 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M272 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M286 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-28: 0 contributions</title>
+  <path d="M302 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M302 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M316 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-11: 0 contributions</title>
+  <path d="M332 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M332 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M346 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-25: 0 contributions</title>
+  <path d="M362 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M362 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M376 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-09: 0 contributions</title>
+  <path d="M392 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M392 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M406 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-23: 0 contributions</title>
+  <path d="M422 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M422 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M436 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-06: 0 contributions</title>
+  <path d="M452 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M452 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M466 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-20: 0 contributions</title>
+  <path d="M482 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M482 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M496 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-04: 0 contributions</title>
+  <path d="M512 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M512 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M526 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-18: 0 contributions</title>
+  <path d="M542 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M542 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M556 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-01: 0 contributions</title>
+  <path d="M572 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M572 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M586 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-15: 0 contributions</title>
+  <path d="M602 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M602 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M616 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-29: 0 contributions</title>
+  <path d="M632 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M632 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M646 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-12: 0 contributions</title>
+  <path d="M662 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M662 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M676 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-26: 0 contributions</title>
+  <path d="M692 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M692 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M706 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-12: 0 contributions</title>
+  <path d="M722 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M722 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M736 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-26: 0 contributions</title>
+  <path d="M752 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M752 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M766 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-09: 0 contributions</title>
+  <path d="M782 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M782 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M796 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-23: 0 contributions</title>
+  <path d="M812 171l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M812 171l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M826 171l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-15: 0 contributions</title>
+  <path d="M77 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M77 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M91 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-29: 0 contributions</title>
+  <path d="M107 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M107 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M121 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-12: 0 contributions</title>
+  <path d="M137 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M137 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M151 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-26: 0 contributions</title>
+  <path d="M167 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M167 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M181 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-10: 0 contributions</title>
+  <path d="M197 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M197 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M211 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-24: 0 contributions</title>
+  <path d="M227 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M227 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M241 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-07: 0 contributions</title>
+  <path d="M257 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M257 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M271 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-21: 0 contributions</title>
+  <path d="M287 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M287 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M301 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-04: 0 contributions</title>
+  <path d="M317 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M317 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M331 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-18: 0 contributions</title>
+  <path d="M347 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M347 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M361 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-02: 0 contributions</title>
+  <path d="M377 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M377 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M391 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-16: 0 contributions</title>
+  <path d="M407 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M407 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M421 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-30: 0 contributions</title>
+  <path d="M437 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M437 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M451 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-13: 0 contributions</title>
+  <path d="M467 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M467 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M481 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-27: 0 contributions</title>
+  <path d="M497 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M497 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M511 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-11: 0 contributions</title>
+  <path d="M527 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M527 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M541 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-25: 0 contributions</title>
+  <path d="M557 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M557 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M571 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-08: 0 contributions</title>
+  <path d="M587 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M587 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M601 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-22: 0 contributions</title>
+  <path d="M617 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M617 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M631 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-05: 0 contributions</title>
+  <path d="M647 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M647 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M661 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-19: 0 contributions</title>
+  <path d="M677 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M677 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M691 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-05: 0 contributions</title>
+  <path d="M707 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M707 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M721 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-19: 0 contributions</title>
+  <path d="M737 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M737 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M751 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-02: 0 contributions</title>
+  <path d="M767 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M767 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M781 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-16: 0 contributions</title>
+  <path d="M797 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M797 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M811 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-30: 0 contributions</title>
+  <path d="M827 173l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M827 173l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M841 173l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-09: 0 contributions</title>
+  <path d="M62 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M62 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M76 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-23: 0 contributions</title>
+  <path d="M92 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M92 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M106 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-06: 0 contributions</title>
+  <path d="M122 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M122 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M136 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-20: 0 contributions</title>
+  <path d="M152 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M152 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M166 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-04: 0 contributions</title>
+  <path d="M182 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M182 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M196 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-18: 0 contributions</title>
+  <path d="M212 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M212 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M226 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-01: 0 contributions</title>
+  <path d="M242 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M242 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M256 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-15: 0 contributions</title>
+  <path d="M272 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M272 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M286 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-29: 0 contributions</title>
+  <path d="M302 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M302 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M316 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-12: 0 contributions</title>
+  <path d="M332 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M332 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M346 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-26: 0 contributions</title>
+  <path d="M362 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M362 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M376 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-10: 0 contributions</title>
+  <path d="M392 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M392 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M406 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-24: 0 contributions</title>
+  <path d="M422 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M422 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M436 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-07: 0 contributions</title>
+  <path d="M452 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M452 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M466 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-21: 0 contributions</title>
+  <path d="M482 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M482 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M496 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-05: 0 contributions</title>
+  <path d="M512 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M512 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M526 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-19: 0 contributions</title>
+  <path d="M542 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M542 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M556 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-02: 0 contributions</title>
+  <path d="M572 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M572 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M586 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-16: 0 contributions</title>
+  <path d="M602 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M602 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M616 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-30: 0 contributions</title>
+  <path d="M632 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M632 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M646 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-13: 0 contributions</title>
+  <path d="M662 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M662 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M676 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-27: 0 contributions</title>
+  <path d="M692 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M692 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M706 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-13: 0 contributions</title>
+  <path d="M722 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M722 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M736 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-27: 0 contributions</title>
+  <path d="M752 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M752 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M766 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-10: 0 contributions</title>
+  <path d="M782 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M782 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M796 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-24: 0 contributions</title>
+  <path d="M812 191l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M812 191l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M826 191l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-16: 0 contributions</title>
+  <path d="M77 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M77 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M91 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-30: 0 contributions</title>
+  <path d="M107 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M107 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M121 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-13: 0 contributions</title>
+  <path d="M137 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M137 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M151 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-27: 0 contributions</title>
+  <path d="M167 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M167 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M181 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-11: 0 contributions</title>
+  <path d="M197 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M197 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M211 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-25: 0 contributions</title>
+  <path d="M227 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M227 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M241 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-08: 0 contributions</title>
+  <path d="M257 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M257 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M271 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-22: 0 contributions</title>
+  <path d="M287 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M287 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M301 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-05: 0 contributions</title>
+  <path d="M317 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M317 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M331 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-19: 0 contributions</title>
+  <path d="M347 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M347 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M361 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-03: 0 contributions</title>
+  <path d="M377 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M377 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M391 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-17: 0 contributions</title>
+  <path d="M407 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M407 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M421 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-31: 0 contributions</title>
+  <path d="M437 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M437 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M451 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-14: 0 contributions</title>
+  <path d="M467 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M467 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M481 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-28: 0 contributions</title>
+  <path d="M497 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M497 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M511 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-12: 0 contributions</title>
+  <path d="M527 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M527 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M541 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-26: 0 contributions</title>
+  <path d="M557 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M557 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M571 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-09: 0 contributions</title>
+  <path d="M587 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M587 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M601 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-23: 0 contributions</title>
+  <path d="M617 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M617 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M631 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-06: 0 contributions</title>
+  <path d="M647 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M647 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M661 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-20: 0 contributions</title>
+  <path d="M677 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M677 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M691 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-06: 0 contributions</title>
+  <path d="M707 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M707 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M721 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-20: 0 contributions</title>
+  <path d="M737 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M737 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M751 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-03: 0 contributions</title>
+  <path d="M767 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M767 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M781 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-17: 0 contributions</title>
+  <path d="M797 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M797 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M811 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-05-01: 0 contributions</title>
+  <path d="M827 193l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M827 193l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M841 193l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-10: 0 contributions</title>
+  <path d="M62 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M62 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M76 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-24: 0 contributions</title>
+  <path d="M92 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M92 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M106 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-07: 0 contributions</title>
+  <path d="M122 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M122 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M136 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-21: 0 contributions</title>
+  <path d="M152 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M152 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M166 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-05: 0 contributions</title>
+  <path d="M182 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M182 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M196 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-19: 0 contributions</title>
+  <path d="M212 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M212 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M226 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-02: 0 contributions</title>
+  <path d="M242 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M242 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M256 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-16: 0 contributions</title>
+  <path d="M272 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M272 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M286 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-30: 0 contributions</title>
+  <path d="M302 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M302 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M316 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-13: 0 contributions</title>
+  <path d="M332 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M332 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M346 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-27: 0 contributions</title>
+  <path d="M362 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M362 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M376 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-11: 0 contributions</title>
+  <path d="M392 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M392 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M406 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-25: 0 contributions</title>
+  <path d="M422 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M422 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M436 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-08: 0 contributions</title>
+  <path d="M452 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M452 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M466 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-22: 0 contributions</title>
+  <path d="M482 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M482 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M496 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-06: 0 contributions</title>
+  <path d="M512 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M512 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M526 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-20: 0 contributions</title>
+  <path d="M542 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M542 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M556 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-03: 0 contributions</title>
+  <path d="M572 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M572 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M586 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-17: 0 contributions</title>
+  <path d="M602 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M602 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M616 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-31: 0 contributions</title>
+  <path d="M632 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M632 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M646 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-14: 0 contributions</title>
+  <path d="M662 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M662 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M676 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-28: 0 contributions</title>
+  <path d="M692 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M692 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M706 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-14: 0 contributions</title>
+  <path d="M722 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M722 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M736 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-28: 0 contributions</title>
+  <path d="M752 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M752 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M766 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-11: 0 contributions</title>
+  <path d="M782 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M782 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M796 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-25: 0 contributions</title>
+  <path d="M812 211l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M812 211l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M826 211l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-05-17: 6 contributions</title>
+  <path d="M77 197l7 -4l7 4l-7 4z" fill="#006d32"/>
+  <path d="M77 197l7 4v19l-7 -4z" fill="#004f14"/>
+  <path d="M91 197l-7 4v19l7 -4z" fill="#003d02"/>
+</g>
+<g>
+  <title>2025-05-31: 0 contributions</title>
+  <path d="M107 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M107 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M121 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-14: 0 contributions</title>
+  <path d="M137 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M137 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M151 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-06-28: 0 contributions</title>
+  <path d="M167 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M167 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M181 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-12: 0 contributions</title>
+  <path d="M197 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M197 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M211 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-07-26: 0 contributions</title>
+  <path d="M227 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M227 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M241 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-09: 0 contributions</title>
+  <path d="M257 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M257 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M271 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-08-23: 0 contributions</title>
+  <path d="M287 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M287 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M301 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-09-06: 2 contributions</title>
+  <path d="M317 206l7 -4l7 4l-7 4z" fill="#0e4429"/>
+  <path d="M317 206l7 4v10l-7 -4z" fill="#00260b"/>
+  <path d="M331 206l-7 4v10l7 -4z" fill="#001400"/>
+</g>
+<g>
+  <title>2025-09-20: 0 contributions</title>
+  <path d="M347 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M347 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M361 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-04: 0 contributions</title>
+  <path d="M377 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M377 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M391 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-10-18: 0 contributions</title>
+  <path d="M407 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M407 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M421 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-01: 0 contributions</title>
+  <path d="M437 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M437 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M451 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-11-15: 2 contributions</title>
+  <path d="M467 206l7 -4l7 4l-7 4z" fill="#0e4429"/>
+  <path d="M467 206l7 4v10l-7 -4z" fill="#00260b"/>
+  <path d="M481 206l-7 4v10l7 -4z" fill="#001400"/>
+</g>
+<g>
+  <title>2025-11-29: 0 contributions</title>
+  <path d="M497 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M497 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M511 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-13: 0 contributions</title>
+  <path d="M527 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M527 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M541 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2025-12-27: 0 contributions</title>
+  <path d="M557 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M557 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M571 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-10: 0 contributions</title>
+  <path d="M587 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M587 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M601 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-01-24: 0 contributions</title>
+  <path d="M617 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M617 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M631 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-07: 0 contributions</title>
+  <path d="M647 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M647 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M661 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-02-21: 0 contributions</title>
+  <path d="M677 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M677 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M691 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-07: 0 contributions</title>
+  <path d="M707 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M707 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M721 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-03-21: 0 contributions</title>
+  <path d="M737 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M737 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M751 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-04: 0 contributions</title>
+  <path d="M767 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M767 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M781 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-04-18: 0 contributions</title>
+  <path d="M797 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M797 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M811 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
+<g>
+  <title>2026-05-02: 0 contributions</title>
+  <path d="M827 213l7 -4l7 4l-7 4z" fill="#161b22"/>
+  <path d="M827 213l7 4v3l-7 -4z" fill="#000004"/>
+  <path d="M841 213l-7 4v3l7 -4z" fill="#000000"/>
+</g>
     </g>
+
+    <path d="M234 448 C182 420 170 354 214 310 C264 260 366 258 476 264 C592 270 668 236 714 174 C766 104 846 126 856 198 C866 270 792 310 720 292 C662 278 640 238 672 208 C705 176 763 178 786 140 C818 88 770 44 700 58 C628 72 600 130 558 174 C516 218 450 224 416 194 C386 168 404 126 452 120 C510 112 530 64 482 44 C414 14 340 58 320 124 C296 202 252 228 190 208 C126 188 82 238 106 302 C132 370 150 420 234 448" transform="translate(12 24)" stroke="#2a0507" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+    <path d="M234 448 C182 420 170 354 214 310 C264 260 366 258 476 264 C592 270 668 236 714 174 C766 104 846 126 856 198 C866 270 792 310 720 292 C662 278 640 238 672 208 C705 176 763 178 786 140 C818 88 770 44 700 58 C628 72 600 130 558 174 C516 218 450 224 416 194 C386 168 404 126 452 120 C510 112 530 64 482 44 C414 14 340 58 320 124 C296 202 252 228 190 208 C126 188 82 238 106 302 C132 370 150 420 234 448" transform="translate(7 15)" stroke="#65090c" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+    <path d="M234 448 C182 420 170 354 214 310 C264 260 366 258 476 264 C592 270 668 236 714 174 C766 104 846 126 856 198 C866 270 792 310 720 292 C662 278 640 238 672 208 C705 176 763 178 786 140 C818 88 770 44 700 58 C628 72 600 130 558 174 C516 218 450 224 416 194 C386 168 404 126 452 120 C510 112 530 64 482 44 C414 14 340 58 320 124 C296 202 252 228 190 208 C126 188 82 238 106 302 C132 370 150 420 234 448" stroke="#f0f6fc" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"/>
+    <path id="monaco-track" d="M234 448 C182 420 170 354 214 310 C264 260 366 258 476 264 C592 270 668 236 714 174 C766 104 846 126 856 198 C866 270 792 310 720 292 C662 278 640 238 672 208 C705 176 763 178 786 140 C818 88 770 44 700 58 C628 72 600 130 558 174 C516 218 450 224 416 194 C386 168 404 126 452 120 C510 112 530 64 482 44 C414 14 340 58 320 124 C296 202 252 228 190 208 C126 188 82 238 106 302 C132 370 150 420 234 448" stroke="#e10600" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="monaco-motion" d="M0 0 C-52 -28 -64 -94 -20 -138 C30 -188 132 -190 242 -184 C358 -178 434 -212 480 -274 C532 -344 612 -322 622 -250 C632 -178 558 -138 486 -156 C428 -170 406 -210 438 -240 C471 -272 529 -270 552 -308 C584 -360 536 -404 466 -390 C394 -376 366 -318 324 -274 C282 -230 216 -224 182 -254 C152 -280 170 -322 218 -328 C276 -336 296 -384 248 -404 C180 -434 106 -390 86 -324 C62 -246 18 -220 -44 -240 C-108 -260 -152 -210 -128 -146 C-102 -78 -84 -28 0 0" fill="none" stroke="none"/>
+    <path d="M234 448 C182 420 170 354 214 310 C264 260 366 258 476 264 C592 270 668 236 714 174 C766 104 846 126 856 198 C866 270 792 310 720 292 C662 278 640 238 672 208 C705 176 763 178 786 140 C818 88 770 44 700 58 C628 72 600 130 558 174 C516 218 450 224 416 194 C386 168 404 126 452 120 C510 112 530 64 482 44 C414 14 340 58 320 124 C296 202 252 228 190 208 C126 188 82 238 106 302 C132 370 150 420 234 448" class="dash" stroke="#ff6b6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+
+    <g transform="translate(218 432) rotate(18)">
+      <rect x="0" y="0" width="9" height="9" fill="#f0f6fc"/>
+      <rect x="9" y="9" width="9" height="9" fill="#f0f6fc"/>
+      <rect x="9" y="0" width="9" height="9" fill="#0d1117"/>
+      <rect x="0" y="9" width="9" height="9" fill="#0d1117"/>
+      <path d="M0 0V38" stroke="#f0f6fc" stroke-width="2"/>
+    </g>
+
+    <g transform="translate(234 448)">
+      <animateMotion dur="9s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#monaco-motion" xlink:href="#monaco-motion"/>
+      </animateMotion>
+      <g transform="translate(-24 -11)">
+        <path d="M3 11L15 2H42L58 11L45 20H13L3 11Z" fill="#e10600"/>
+        <path d="M20 6H35L43 11L34 15H19Z" fill="#f0f6fc"/>
+        <path d="M0 11H61" stroke="#15151e" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="15" cy="21" r="5" fill="#010409"/>
+        <circle cx="47" cy="21" r="5" fill="#010409"/>
+        <circle cx="15" cy="21" r="2" fill="#8b949e"/>
+        <circle cx="47" cy="21" r="2" fill="#8b949e"/>
+        <path d="M5 8H-8" stroke="#ffcd00" stroke-width="3" stroke-linecap="round"/>
+        <path d="M5 15H-17" stroke="#ff8700" stroke-width="3" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <text x="608" y="112" class="muted">CASINO</text>
+    <text x="770" y="246" class="muted">TUNNEL</text>
+    <text x="124" y="206" class="muted">MIRABEAU</text>
+    <text x="158" y="476" class="muted">START</text>
+    <text x="700" y="424" class="muted">PORT</text>
   </g>
 
-  <text x="34" y="182" class="label">32 contributions</text>
-  <text x="680" y="182" class="muted">animated F1 race line</text>
+  <text x="64" y="554" class="month">May</text>
+<text x="124" y="554" class="month">Jun</text>
+<text x="199" y="554" class="month">Jul</text>
+<text x="259" y="554" class="month">Aug</text>
+<text x="334" y="554" class="month">Sep</text>
+<text x="394" y="554" class="month">Oct</text>
+<text x="454" y="554" class="month">Nov</text>
+<text x="529" y="554" class="month">Dec</text>
+<text x="589" y="554" class="month">Jan</text>
+<text x="649" y="554" class="month">Feb</text>
+<text x="709" y="554" class="month">Mar</text>
+<text x="784" y="554" class="month">Apr</text>
+<text x="844" y="554" class="month">May</text>
+  <text x="52" y="590" class="label">33 contributions</text>
+  <text x="805" y="590" text-anchor="end" class="muted">best day: 2026-05-05 / 13</text>
 </svg>
