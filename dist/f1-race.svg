@@ -1,6 +1,6 @@
 <svg width="1000" height="620" viewBox="0 0 1000 620" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
   <title id="title">nariokeith Monaco contribution circuit</title>
-  <desc id="desc">A polished 3D Monaco circuit showing 36 real GitHub contributions as skyline height and telemetry.</desc>
+  <desc id="desc">A polished 3D Monaco circuit showing 37 real GitHub contributions as skyline height and telemetry.</desc>
   <style>
     .title { font: 800 28px Arial, sans-serif; letter-spacing: 3px; fill: #f0f6fc; }
     .subtitle { font: 600 12px Arial, sans-serif; letter-spacing: 2px; fill: #8b949e; }
@@ -47,27 +47,27 @@
       <g opacity="0.96">
   <g>
   <title>May: 13 contributions</title>
-  <path d="M64 142l8 -4.4h18l-8 4.4z" fill="#27303c"/>
-  <path d="M82 142l8 -4.4v46l-8 4.4z" fill="#00000a"/>
-  <rect x="64" y="142" width="18" height="46" fill="#0f1824"/>
+  <path d="M64 144l8 -4.4h18l-8 4.4z" fill="#27303c"/>
+  <path d="M82 144l8 -4.4v44l-8 4.4z" fill="#00000a"/>
+  <rect x="64" y="144" width="18" height="44" fill="#0f1824"/>
   <path d="M64 188h18l8 -4.4h-18z" fill="#000000" opacity="0.55"/>
-  <rect x="68" y="151" width="10" height="2" rx="1" fill="#26a641" opacity="0.72"/><rect x="68" y="164" width="10" height="2" rx="1" fill="#26a641" opacity="0.72"/>
+  <rect x="68" y="153" width="10" height="2" rx="1" fill="#26a641" opacity="0.72"/><rect x="68" y="166" width="10" height="2" rx="1" fill="#26a641" opacity="0.72"/>
 </g>
   <g>
   <title>May: 13 contributions</title>
-  <path d="M84 107l10 -5.5h24l-10 5.5z" fill="#2f3844"/>
-  <path d="M108 107l10 -5.5v88l-10 5.5z" fill="#000612"/>
-  <rect x="84" y="107" width="24" height="88" fill="#17202c"/>
+  <path d="M84 110l10 -5.5h24l-10 5.5z" fill="#2f3844"/>
+  <path d="M108 110l10 -5.5v85l-10 5.5z" fill="#000612"/>
+  <rect x="84" y="110" width="24" height="85" fill="#17202c"/>
   <path d="M84 195h24l10 -5.5h-24z" fill="#000000" opacity="0.55"/>
-  <rect x="88" y="116" width="16" height="2" rx="1" fill="#26a641" opacity="0.72"/><rect x="88" y="129" width="16" height="2" rx="1" fill="#26a641" opacity="0.72"/><rect x="88" y="142" width="16" height="2" rx="1" fill="#26a641" opacity="0.72"/><rect x="88" y="155" width="16" height="2" rx="1" fill="#26a641" opacity="0.72"/>
+  <rect x="88" y="119" width="16" height="2" rx="1" fill="#26a641" opacity="0.72"/><rect x="88" y="132" width="16" height="2" rx="1" fill="#26a641" opacity="0.72"/><rect x="88" y="145" width="16" height="2" rx="1" fill="#26a641" opacity="0.72"/><rect x="88" y="158" width="16" height="2" rx="1" fill="#26a641" opacity="0.72"/>
 </g>
   <g>
   <title>May: 13 contributions</title>
-  <path d="M112 165l7 -3.8500000000000005h14l-7 3.8500000000000005z" fill="#232c38"/>
-  <path d="M126 165l7 -3.8500000000000005v37l-7 3.8500000000000005z" fill="#000006"/>
-  <rect x="112" y="165" width="14" height="37" fill="#0b1420"/>
+  <path d="M112 166l7 -3.8500000000000005h14l-7 3.8500000000000005z" fill="#232c38"/>
+  <path d="M126 166l7 -3.8500000000000005v36l-7 3.8500000000000005z" fill="#000006"/>
+  <rect x="112" y="166" width="14" height="36" fill="#0b1420"/>
   <path d="M112 202h14l7 -3.8500000000000005h-14z" fill="#000000" opacity="0.55"/>
-  <rect x="116" y="174" width="6" height="2" rx="1" fill="#26a641" opacity="0.72"/><rect x="116" y="187" width="6" height="2" rx="1" fill="#26a641" opacity="0.72"/>
+  <rect x="116" y="175" width="6" height="2" rx="1" fill="#26a641" opacity="0.72"/><rect x="116" y="188" width="6" height="2" rx="1" fill="#26a641" opacity="0.72"/>
 </g>
 </g>
 <g opacity="0.96">
@@ -151,19 +151,19 @@
 <g opacity="0.96">
   <g>
   <title>Sep: 2 contributions</title>
-  <path d="M306 145l8 -4.4h18l-8 4.4z" fill="#27303c"/>
-  <path d="M324 145l8 -4.4v25l-8 4.4z" fill="#00000a"/>
-  <rect x="306" y="145" width="18" height="25" fill="#0f1824"/>
+  <path d="M306 146l8 -4.4h18l-8 4.4z" fill="#27303c"/>
+  <path d="M324 146l8 -4.4v24l-8 4.4z" fill="#00000a"/>
+  <rect x="306" y="146" width="18" height="24" fill="#0f1824"/>
   <path d="M306 170h18l8 -4.4h-18z" fill="#000000" opacity="0.55"/>
-  <rect x="310" y="154" width="10" height="2" rx="1" fill="#0e4429" opacity="0.72"/>
+  <rect x="310" y="155" width="10" height="2" rx="1" fill="#0e4429" opacity="0.72"/>
 </g>
   <g>
   <title>Sep: 2 contributions</title>
-  <path d="M326 138l10 -5.5h24l-10 5.5z" fill="#2f3844"/>
-  <path d="M350 138l10 -5.5v39l-10 5.5z" fill="#000612"/>
-  <rect x="326" y="138" width="24" height="39" fill="#17202c"/>
+  <path d="M326 139l10 -5.5h24l-10 5.5z" fill="#2f3844"/>
+  <path d="M350 139l10 -5.5v38l-10 5.5z" fill="#000612"/>
+  <rect x="326" y="139" width="24" height="38" fill="#17202c"/>
   <path d="M326 177h24l10 -5.5h-24z" fill="#000000" opacity="0.55"/>
-  <rect x="330" y="147" width="16" height="2" rx="1" fill="#0e4429" opacity="0.72"/><rect x="330" y="160" width="16" height="2" rx="1" fill="#0e4429" opacity="0.72"/>
+  <rect x="330" y="148" width="16" height="2" rx="1" fill="#0e4429" opacity="0.72"/><rect x="330" y="161" width="16" height="2" rx="1" fill="#0e4429" opacity="0.72"/>
 </g>
   <g>
   <title>Sep: 2 contributions</title>
@@ -211,11 +211,11 @@
 </g>
   <g>
   <title>Nov: 2 contributions</title>
-  <path d="M456 134l10 -5.5h24l-10 5.5z" fill="#2f3844"/>
-  <path d="M480 134l10 -5.5v39l-10 5.5z" fill="#000612"/>
-  <rect x="456" y="134" width="24" height="39" fill="#17202c"/>
+  <path d="M456 135l10 -5.5h24l-10 5.5z" fill="#2f3844"/>
+  <path d="M480 135l10 -5.5v38l-10 5.5z" fill="#000612"/>
+  <rect x="456" y="135" width="24" height="38" fill="#17202c"/>
   <path d="M456 173h24l10 -5.5h-24z" fill="#000000" opacity="0.55"/>
-  <rect x="460" y="143" width="16" height="2" rx="1" fill="#0e4429" opacity="0.72"/><rect x="460" y="156" width="16" height="2" rx="1" fill="#0e4429" opacity="0.72"/>
+  <rect x="460" y="144" width="16" height="2" rx="1" fill="#0e4429" opacity="0.72"/><rect x="460" y="157" width="16" height="2" rx="1" fill="#0e4429" opacity="0.72"/>
 </g>
   <g>
   <title>Nov: 2 contributions</title>
@@ -358,7 +358,7 @@
 </g>
 <g opacity="0.96">
   <g>
-  <title>May: 18 contributions</title>
+  <title>May: 19 contributions</title>
   <path d="M846 113l8 -4.4h18l-8 4.4z" fill="#27303c"/>
   <path d="M864 113l8 -4.4v57l-8 4.4z" fill="#00000a"/>
   <rect x="846" y="113" width="18" height="57" fill="#0f1824"/>
@@ -366,7 +366,7 @@
   <rect x="850" y="122" width="10" height="2" rx="1" fill="#39d353" opacity="0.72"/><rect x="850" y="135" width="10" height="2" rx="1" fill="#39d353" opacity="0.72"/><rect x="850" y="148" width="10" height="2" rx="1" fill="#39d353" opacity="0.72"/>
 </g>
   <g>
-  <title>May: 18 contributions</title>
+  <title>May: 19 contributions</title>
   <path d="M866 67l10 -5.5h24l-10 5.5z" fill="#2f3844"/>
   <path d="M890 67l10 -5.5v110l-10 5.5z" fill="#000612"/>
   <rect x="866" y="67" width="24" height="110" fill="#17202c"/>
@@ -374,7 +374,7 @@
   <rect x="870" y="76" width="16" height="2" rx="1" fill="#39d353" opacity="0.72"/><rect x="870" y="89" width="16" height="2" rx="1" fill="#39d353" opacity="0.72"/><rect x="870" y="102" width="16" height="2" rx="1" fill="#39d353" opacity="0.72"/><rect x="870" y="115" width="16" height="2" rx="1" fill="#39d353" opacity="0.72"/><rect x="870" y="128" width="16" height="2" rx="1" fill="#39d353" opacity="0.72"/>
 </g>
   <g>
-  <title>May: 18 contributions</title>
+  <title>May: 19 contributions</title>
   <path d="M894 138l7 -3.8500000000000005h14l-7 3.8500000000000005z" fill="#232c38"/>
   <path d="M908 138l7 -3.8500000000000005v46l-7 3.8500000000000005z" fill="#000006"/>
   <rect x="894" y="138" width="14" height="46" fill="#0b1420"/>
@@ -469,11 +469,11 @@
   <text x="823.67" y="574" text-anchor="middle" class="month">Apr</text>
 </g>
 <g>
-  <title>May: 18 contributions</title>
+  <title>May: 19 contributions</title>
   <rect x="890" y="523" width="4" height="27" rx="2" fill="#39d353"/>
   <text x="892" y="574" text-anchor="middle" class="month">May</text>
 </g>
 </g>
-  <text x="52" y="590" class="label">36 contributions</text>
-  <text x="805" y="590" text-anchor="end" class="muted">best day: 2026-05-05 / 16</text>
+  <text x="52" y="590" class="label">37 contributions</text>
+  <text x="805" y="590" text-anchor="end" class="muted">best day: 2026-05-05 / 17</text>
 </svg>
