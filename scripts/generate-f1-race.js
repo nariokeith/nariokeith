@@ -163,56 +163,118 @@ function shade(color, amount) {
   return `#${shifted.map((part) => part.toString(16).padStart(2, "0")).join("")}`;
 }
 
-function monthLabels(weeks) {
-  const labels = [];
-  let previousMonth = "";
+function monthStats(weeks) {
+  const stats = [];
+  const byMonth = new Map();
 
-  weeks.forEach((week, index) => {
-    const firstDay = week.contributionDays[0];
-    if (!firstDay) return;
+  weeks
+    .flatMap((week) => week.contributionDays)
+    .sort((left, right) => left.date.localeCompare(right.date))
+    .forEach((day) => {
+      const date = new Date(`${day.date}T00:00:00Z`);
+      const key = day.date.slice(0, 7);
 
-    const date = new Date(`${firstDay.date}T00:00:00Z`);
-    const month = date.toLocaleString("en", { month: "short", timeZone: "UTC" });
+      if (!byMonth.has(key)) {
+        const stat = {
+          key,
+          label: date.toLocaleString("en", { month: "short", timeZone: "UTC" }),
+          total: 0,
+          days: [],
+        };
 
-    if (month !== previousMonth) {
-      labels.push(
-        `<text x="${64 + index * 15}" y="554" class="month">${escapeXml(month)}</text>`
-      );
-      previousMonth = month;
-    }
-  });
+        byMonth.set(key, stat);
+        stats.push(stat);
+      }
 
-  return labels.join("\n");
+      const stat = byMonth.get(key);
+      stat.total += day.contributionCount;
+      stat.days.push(day);
+    });
+
+  return stats;
 }
 
-function contributionBlocks(weeks, max) {
-  const blocks = [];
+function telemetryStrip(months) {
+  const maxMonth = Math.max(...months.map((month) => month.total), 1);
+  const startX = 72;
+  const endX = 892;
+  const baseY = 550;
+  const step = months.length > 1 ? (endX - startX) / (months.length - 1) : 0;
 
-  weeks.forEach((week, weekIndex) => {
-    week.contributionDays.forEach((day) => {
-      const x = 62 + weekIndex * 15;
-      const y = 94 + day.weekday * 20 + (weekIndex % 2) * 2;
-      const height = day.contributionCount === 0 ? 3 : 6 + Math.min(24, Math.round((day.contributionCount / Math.max(max, 1)) * 28));
-      const color = contributionColor(day.contributionCount, max);
-      const dark = shade(color, -30);
-      const darker = shade(color, -48);
-      const title = `${day.date}: ${day.contributionCount} contribution${day.contributionCount === 1 ? "" : "s"}`;
+  const ticks = months
+    .map((month, index) => {
+      const x = startX + index * step;
+      const height = month.total === 0 ? 4 : 7 + Math.round((month.total / maxMonth) * 20);
+      const color = month.total === 0 ? "#30363d" : contributionColor(month.total, maxMonth);
 
-      blocks.push({
-        y,
-        markup: `<g>
-  <title>${escapeXml(title)}</title>
-  <path d="M${x} ${y - height}l7 -4l7 4l-7 4z" fill="${color}"/>
-  <path d="M${x} ${y - height}l7 4v${height}l-7 -4z" fill="${dark}"/>
-  <path d="M${x + 14} ${y - height}l-7 4v${height}l7 -4z" fill="${darker}"/>
-</g>`,
-      });
-    });
-  });
+      return `<g>
+  <title>${escapeXml(month.label)}: ${month.total} contribution${month.total === 1 ? "" : "s"}</title>
+  <rect x="${Number((x - 2).toFixed(2))}" y="${baseY - height}" width="4" height="${height}" rx="2" fill="${color}"/>
+  <text x="${Number(x.toFixed(2))}" y="574" text-anchor="middle" class="month">${escapeXml(month.label)}</text>
+</g>`;
+    })
+    .join("\n");
 
-  return blocks
-    .sort((left, right) => left.y - right.y)
-    .map((block) => block.markup)
+  return `<g>
+  <path d="M${startX - 18} ${baseY}H${endX + 18}" stroke="#29313b" stroke-width="2" stroke-linecap="round"/>
+  ${ticks}
+</g>`;
+}
+
+function building(x, y, width, height, depth, color, accent, label, total) {
+  const right = shade(color, -26);
+  const top = shade(color, 24);
+  const shadow = shade(color, -48);
+  const floors = Math.max(1, Math.min(5, Math.floor(height / 18)));
+  const windows = Array.from({ length: floors }, (_, index) => {
+    const wy = y - height + 9 + index * 13;
+    return `<rect x="${x + 4}" y="${wy}" width="${Math.max(2, width - 8)}" height="2" rx="1" fill="${accent}" opacity="${total > 0 ? 0.72 : 0.18}"/>`;
+  }).join("");
+
+  return `<g>
+  <title>${escapeXml(label)}: ${total} contribution${total === 1 ? "" : "s"}</title>
+  <path d="M${x} ${y - height}l${depth} -${depth * 0.55}h${width}l-${depth} ${depth * 0.55}z" fill="${top}"/>
+  <path d="M${x + width} ${y - height}l${depth} -${depth * 0.55}v${height}l-${depth} ${depth * 0.55}z" fill="${right}"/>
+  <rect x="${x}" y="${y - height}" width="${width}" height="${height}" fill="${color}"/>
+  <path d="M${x} ${y}h${width}l${depth} -${depth * 0.55}h-${width}z" fill="${shadow}" opacity="0.55"/>
+  ${windows}
+</g>`;
+}
+
+function contributionCity(months) {
+  const maxMonth = Math.max(...months.map((month) => month.total), 1);
+  const anchors = [
+    [64, 188],
+    [118, 156],
+    [178, 176],
+    [242, 142],
+    [306, 170],
+    [370, 136],
+    [436, 166],
+    [502, 132],
+    [570, 158],
+    [638, 126],
+    [708, 154],
+    [780, 134],
+    [846, 170],
+  ];
+
+  return months
+    .slice(0, anchors.length)
+    .map((month, index) => {
+      const [x, y] = anchors[index];
+      const activity = month.total / maxMonth;
+      const mainHeight = month.total === 0 ? 18 : 30 + Math.round(activity * 80);
+      const sideHeight = Math.max(14, Math.round(mainHeight * (0.52 + ((index % 3) * 0.12))));
+      const color = month.total > 0 ? "#17202c" : "#111820";
+      const accent = month.total > 0 ? contributionColor(month.total, maxMonth) : "#3d4652";
+
+      return `<g opacity="${month.total > 0 ? 0.96 : 0.62}">
+  ${building(x, y, 18, sideHeight, 8, shade(color, -8), accent, month.label, month.total)}
+  ${building(x + 20, y + 7, 24, mainHeight, 10, color, accent, month.label, month.total)}
+  ${building(x + 48, y + 14, 14, Math.max(12, Math.round(mainHeight * 0.42)), 7, shade(color, -12), accent, month.label, month.total)}
+</g>`;
+    })
     .join("\n");
 }
 
@@ -238,7 +300,7 @@ function roadLines() {
 function renderSvg(calendar) {
   const weeks = calendar.weeks;
   const days = weeks.flatMap((week) => week.contributionDays);
-  const max = Math.max(...days.map((day) => day.contributionCount), 1);
+  const months = monthStats(weeks);
   const bestDay = days.reduce((best, day) => (day.contributionCount > best.contributionCount ? day : best), {
     date: "",
     contributionCount: 0,
@@ -251,7 +313,7 @@ function renderSvg(calendar) {
 
   return `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
   <title id="title">${escapeXml(username)} Monaco contribution circuit</title>
-  <desc id="desc">A 3D Monaco style circuit showing ${calendar.totalContributions} real GitHub contributions as raised city blocks.</desc>
+  <desc id="desc">A polished 3D Monaco circuit showing ${calendar.totalContributions} real GitHub contributions as skyline height and telemetry.</desc>
   <style>
     .title { font: 800 28px Arial, sans-serif; letter-spacing: 3px; fill: #f0f6fc; }
     .subtitle { font: 600 12px Arial, sans-serif; letter-spacing: 2px; fill: #8b949e; }
@@ -285,8 +347,8 @@ function renderSvg(calendar) {
   <g transform="matrix(0.72,0,-0.08,0.56,258,82)">
     ${roadLines()}
 
-    <g opacity="0.82">
-      ${contributionBlocks(weeks, max)}
+    <g>
+      ${contributionCity(months)}
     </g>
 
     <path d="${monacoTrack}" transform="translate(18 30)" stroke="#1d0304" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
@@ -311,7 +373,7 @@ function renderSvg(calendar) {
     <text x="46" y="714" class="track-label">START</text>
   </g>
 
-  ${monthLabels(weeks)}
+  ${telemetryStrip(months)}
   <text x="52" y="590" class="label">${calendar.totalContributions} contributions</text>
   <text x="805" y="590" text-anchor="end" class="muted">best day: ${escapeXml(bestDay.date || "none")} / ${bestDay.contributionCount}</text>
 </svg>
