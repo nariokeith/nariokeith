@@ -1,111 +1,31 @@
-<!--
-Profile README notes:
-- Create a public repository named exactly like your GitHub username.
-- Put this README.md in the root of that repository.
-- This design avoids common badge generators, copied icon rows, and official racing logos.
-- Keep the stack honest. Delete tools you have not used yet.
--->
-
-<div align="center">
-  <img src="./assets/f1-profile-banner.svg" alt="F1 inspired software garage banner for Keith Justin Nario" width="100%">
-</div>
-
-# Keith Justin Nario
-
-I build web apps and APIs with a race-engineering mindset: clean structure, fast
-feedback, careful debugging, and steady improvement every lap.
-
-```text
-role        software developer
-base        Philippines
-focus       full-stack web development
-style       simple systems, readable code, useful interfaces
-```
-
-## Pit Wall
-
-| Signal | Current read |
-| --- | --- |
-| Now building | Full-stack projects, API workflows, and polished frontend screens |
-| Improving | TypeScript habits, backend structure, testing, deployment |
-| I like | Clear commits, small iterations, practical features |
-| Rule | Make the next change easier than the last one |
-
-## Tech Stack
-
-### Languages and Core
-
-| Track | Tools |
-| --- | --- |
-| Markup and styling | `HTML` `CSS` |
-| Programming | `JavaScript` `TypeScript` `Python` `C++` |
-| Runtime | `Node.js` |
-
-### Frontend Garage
-
-| Track | Tools |
-| --- | --- |
-| UI building | `React` `Next.js` |
-| Styling approach | `CSS Modules` `Responsive Layouts` |
-| Quality pass | `Accessibility Checks` `Mobile Polish` |
-
-### Backend and Data
-
-| Track | Tools |
-| --- | --- |
-| Server work | `Express` `REST APIs` |
-| Databases | `MongoDB` `MySQL` `Supabase` |
-| API testing | `Postman` |
-
-### Ship and Maintain
-
-| Track | Tools |
-| --- | --- |
-| Version control | `Git` `GitHub` |
-| Deployment | `Vercel` `Render` |
-| Package flow | `npm` |
-
-## Racecraft
-
-- I break rough ideas into small, buildable parts.
-- I read errors carefully before changing code.
-- I prefer code that explains itself over code that needs a speech.
-- I measure progress by working features, not noise.
-- I keep refactoring close to the problem I am solving.
-
-## Telemetry
-
-<div align="center">
-  <img src="./assets/f1-telemetry.svg" alt="F1 inspired development telemetry graphic" width="100%">
-</div>
-
-```text
-plan -> build -> test -> review -> ship
-```
-
-## Featured Work
-
-I keep my strongest repositories pinned below this README so visitors can see the
-actual code, not just the profile design.
-
-<!--
-When you are ready, replace this section with 2-3 real projects:
-
-| Project | What it solves | Stack |
-| --- | --- | --- |
-| [Project Name](https://github.com/nariokeith/project) | One plain-English sentence. | React, Node.js |
--->
-
-## Contact
-
-Best place to reach me: [@nariokeith](https://github.com/nariokeith)
+# 🏁 Hi I'm Keith
 
 ---
 
-<div align="center">
+## 🏎️ Tech Stack:
 
-```text
-CHEQUERED FLAG: reliable laps beat noisy dashboards.
-```
+### 🛠️ Languages & Core
+![HTML](https://img.shields.io/badge/HTML-E10600?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-15151E?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JAVASCRIPT-FFCD00?style=for-the-badge&logo=javascript&logoColor=15151E)
+![TypeScript](https://img.shields.io/badge/TYPESCRIPT-0090D0?style=for-the-badge&logo=typescript&logoColor=white)
+![C++](https://img.shields.io/badge/C++-005AFF?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
-</div>
+### 🚦 Frameworks & Runtimes
+![React](https://img.shields.io/badge/REACT-15151E?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/NODE.JS-00A19B?style=for-the-badge&logo=node.js&logoColor=white)
+
+### 🧰 Database, Deployment & Tools
+![MySQL](https://img.shields.io/badge/MYSQL-005AFF?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MONGODB-00A19B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Supabase](https://img.shields.io/badge/SUPABASE-00D2BE?style=for-the-badge&logo=supabase&logoColor=15151E)
+![Vercel](https://img.shields.io/badge/VERCEL-15151E?style=for-the-badge&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/RENDER-00A19B?style=for-the-badge&logo=render&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-E10600?style=for-the-badge&logo=npm&logoColor=white)
+![Postman](https://img.shields.io/badge/POSTMAN-FF8700?style=for-the-badge&logo=postman&logoColor=white)
+
+---
+
+## 📊 GitHub Contributions
+
+![](./profile-3d-contrib/profile-gitblock.svg)
