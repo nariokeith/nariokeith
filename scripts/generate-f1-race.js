@@ -235,14 +235,6 @@ function roadLines() {
     .join("\n");
 }
 
-function relativeMotionPath(path, startX, startY) {
-  return path.replace(/(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)/g, (_, rawX, rawY) => {
-    const x = Number(rawX) - startX;
-    const y = Number(rawY) - startY;
-    return `${Number(x.toFixed(2))} ${Number(y.toFixed(2))}`;
-  });
-}
-
 function renderSvg(calendar) {
   const weeks = calendar.weeks;
   const days = weeks.flatMap((week) => week.contributionDays);
@@ -253,26 +245,9 @@ function renderSvg(calendar) {
   });
   const width = 1000;
   const height = 620;
-  const monacoTrack = [
-    "M234 448",
-    "C182 420 170 354 214 310",
-    "C264 260 366 258 476 264",
-    "C592 270 668 236 714 174",
-    "C766 104 846 126 856 198",
-    "C866 270 792 310 720 292",
-    "C662 278 640 238 672 208",
-    "C705 176 763 178 786 140",
-    "C818 88 770 44 700 58",
-    "C628 72 600 130 558 174",
-    "C516 218 450 224 416 194",
-    "C386 168 404 126 452 120",
-    "C510 112 530 64 482 44",
-    "C414 14 340 58 320 124",
-    "C296 202 252 228 190 208",
-    "C126 188 82 238 106 302",
-    "C132 370 150 420 234 448",
-  ].join(" ");
-  const carMotion = relativeMotionPath(monacoTrack, 234, 448);
+  // Public-domain Circuit Monaco.svg path from Wikimedia Commons, based on the official circuit map.
+  const monacoTrack =
+    "M 104.50658,653.97079 C 104.50658,653.97079 84.965034,629.56873 79.834481,596.08515 C 79.834481,596.08515 74.973956,554.23062 75.243997,532.3584 C 75.243997,532.3584 77.404225,475.92227 85.50508,450.80965 C 85.50508,450.80965 93.335916,414.35577 109.26763,387.89296 L 130.86994,353.05921 C 130.86994,353.05921 134.82662,338.97228 148.55254,344.16813 C 148.55254,344.16813 164.35349,348.1987 189.46616,348.1987 L 339.60219,344.95836 C 339.60219,344.95836 350.40331,344.41832 369.57538,337.39752 C 369.57538,337.39752 382.80679,333.6172 398.73845,333.6172 L 464.89557,330.64679 C 464.89557,330.64679 470.02615,332.80707 485.68779,322.27592 L 501.88952,308.50449 C 501.88952,308.50449 510.80047,296.08313 508.91022,291.22263 C 508.91022,291.22263 509.45033,284.20187 507.29006,278.53133 L 486.7679,237.48687 C 486.7679,237.48687 482.17744,228.90319 483.44088,219.42358 C 483.44088,219.42358 483.46952,211.9309 486.48858,209.16245 L 578.03766,122.45467 C 578.03766,122.45467 589.37879,111.92347 595.31947,111.92347 C 595.31947,111.92347 605.04054,109.49323 604.23043,121.10449 C 604.23043,121.10449 603.96043,158.09841 606.9307,172.13996 L 610.98113,190.77187 C 610.98113,190.77187 612.06126,202.38316 621.24229,200.76303 C 621.24229,200.76303 629.07308,200.49299 629.34315,190.77187 L 628.533,162.68893 C 628.533,162.68893 625.56265,148.37737 642.57452,147.83732 L 670.11743,146.75721 C 670.11743,146.75721 681.72868,145.13703 679.2984,160.52866 L 671.4676,194.01228 C 671.4676,194.01228 651.48542,262.59958 609.3609,309.5846 C 609.3609,309.5846 552.9249,355.21942 502.4296,366.29061 C 502.4296,366.29061 485.68779,372.23126 445.4535,373.58144 L 349.85202,375.86671 C 349.85202,375.86671 345.85264,380.74992 346.08288,385.46271 L 345.12781,394.57255 C 345.12781,394.57255 336.70589,395.4736 333.41139,395.55892 L 310.68925,395.55892 L 300.98805,390.32318 C 300.98805,390.32318 291.8071,382.2223 281.81601,384.38256 L 221.59959,384.65261 L 180.2852,386.27274 C 180.2852,386.27274 161.65323,385.46271 154.63245,402.47446 C 154.63245,402.47446 143.70623,423.70454 134.42303,477.53919 L 140.46862,483.78999 C 140.46862,483.78999 143.75175,485.72297 144.35154,493.48856 L 145.51777,552.0814 C 145.51777,552.0814 145.45152,560.71138 133.03009,576.91313 C 133.03009,576.91313 124.37277,587.95117 130.04328,610.09356 C 130.04328,610.09356 138.7007,636.31942 162.46329,654.41137 C 162.46329,654.41137 180.01513,670.61309 191.6264,674.93354 C 191.6264,674.93354 205.93792,680.33415 204.04778,693.83555 C 204.04778,693.83555 204.04778,703.82663 190.27624,703.28655 L 116.34799,695.18571 C 116.34799,695.18571 102.80682,695.4359 106.85727,682.20447 C 106.85727,682.20447 115.06333,666.1136 104.50658,653.97079 z";
 
   return `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
   <title id="title">${escapeXml(username)} Monaco contribution circuit</title>
@@ -283,10 +258,7 @@ function renderSvg(calendar) {
     .label { font: 700 14px Arial, sans-serif; fill: #f0f6fc; }
     .muted { font: 600 11px Arial, sans-serif; fill: #8b949e; }
     .month { font: 600 10px Arial, sans-serif; fill: #8b949e; }
-    .pulse { animation: pulse 1.4s ease-in-out infinite; transform-origin: center; }
-    .dash { stroke-dasharray: 18 14; animation: dash 1.2s linear infinite; }
-    @keyframes dash { to { stroke-dashoffset: -32; } }
-    @keyframes pulse { 0%, 100% { opacity: 0.75; } 50% { opacity: 1; } }
+    .track-label { font: 700 10px Arial, sans-serif; letter-spacing: 1px; fill: #aeb7c2; }
   </style>
   <defs>
     <linearGradient id="sea" x1="660" y1="300" x2="970" y2="600" gradientUnits="userSpaceOnUse">
@@ -297,7 +269,7 @@ function renderSvg(calendar) {
       <stop stop-color="#e10600" stop-opacity="0.28"/>
       <stop offset="1" stop-color="#e10600" stop-opacity="0"/>
     </radialGradient>
-    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000000" flood-opacity="0.55"/>
     </filter>
   </defs>
@@ -310,21 +282,20 @@ function renderSvg(calendar) {
   <text x="50%" y="42" text-anchor="middle" class="title">MONTE CARLO</text>
   <text x="50%" y="64" text-anchor="middle" class="subtitle">MONACO CONTRIBUTION CIRCUIT</text>
 
-  <g transform="matrix(0.82,0,-0.068,0.78,104,82)">
+  <g transform="matrix(0.72,0,-0.08,0.56,258,82)">
     ${roadLines()}
 
     <g opacity="0.82">
       ${contributionBlocks(weeks, max)}
     </g>
 
-    <path d="${monacoTrack}" transform="translate(12 24)" stroke="#2a0507" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
-    <path d="${monacoTrack}" transform="translate(7 15)" stroke="#65090c" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
-    <path d="${monacoTrack}" stroke="#f0f6fc" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"/>
-    <path id="monaco-track" d="${monacoTrack}" stroke="#e10600" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
-    <path id="monaco-motion" d="${carMotion}" fill="none" stroke="none"/>
-    <path d="${monacoTrack}" class="dash" stroke="#ff6b6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+    <path d="${monacoTrack}" transform="translate(18 30)" stroke="#1d0304" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+    <path d="${monacoTrack}" transform="translate(10 18)" stroke="#5a0709" stroke-width="39" stroke-linecap="round" stroke-linejoin="round" opacity="0.98"/>
+    <path d="${monacoTrack}" stroke="#f7f7f7" stroke-width="38" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)"/>
+    <path d="${monacoTrack}" stroke="#e10600" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="${monacoTrack}" stroke="#ff6b6b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="22 18" opacity="0.9"/>
 
-    <g transform="translate(218 432) rotate(18)">
+    <g transform="translate(118 680) rotate(6)">
       <rect x="0" y="0" width="9" height="9" fill="#f0f6fc"/>
       <rect x="9" y="9" width="9" height="9" fill="#f0f6fc"/>
       <rect x="9" y="0" width="9" height="9" fill="#0d1117"/>
@@ -332,28 +303,12 @@ function renderSvg(calendar) {
       <path d="M0 0V38" stroke="#f0f6fc" stroke-width="2"/>
     </g>
 
-    <g transform="translate(234 448)">
-      <animateMotion dur="9s" repeatCount="indefinite" rotate="auto">
-        <mpath href="#monaco-motion" xlink:href="#monaco-motion"/>
-      </animateMotion>
-      <g transform="translate(-24 -11)">
-        <path d="M3 11L15 2H42L58 11L45 20H13L3 11Z" fill="#e10600"/>
-        <path d="M20 6H35L43 11L34 15H19Z" fill="#f0f6fc"/>
-        <path d="M0 11H61" stroke="#15151e" stroke-width="3" stroke-linecap="round"/>
-        <circle cx="15" cy="21" r="5" fill="#010409"/>
-        <circle cx="47" cy="21" r="5" fill="#010409"/>
-        <circle cx="15" cy="21" r="2" fill="#8b949e"/>
-        <circle cx="47" cy="21" r="2" fill="#8b949e"/>
-        <path d="M5 8H-8" stroke="#ffcd00" stroke-width="3" stroke-linecap="round"/>
-        <path d="M5 15H-17" stroke="#ff8700" stroke-width="3" stroke-linecap="round"/>
-      </g>
-    </g>
-
-    <text x="608" y="112" class="muted">CASINO</text>
-    <text x="770" y="246" class="muted">TUNNEL</text>
-    <text x="124" y="206" class="muted">MIRABEAU</text>
-    <text x="158" y="476" class="muted">START</text>
-    <text x="700" y="424" class="muted">PORT</text>
+    <text x="388" y="178" class="track-label">CASINO</text>
+    <text x="654" y="344" class="track-label">TUNNEL</text>
+    <text x="536" y="238" class="track-label">HAIRPIN</text>
+    <text x="198" y="564" class="track-label">PISCINE</text>
+    <text x="254" y="706" class="track-label">RASCASSE</text>
+    <text x="46" y="714" class="track-label">START</text>
   </g>
 
   ${monthLabels(weeks)}
