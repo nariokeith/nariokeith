@@ -14,6 +14,7 @@
 
 ### 🏎️ Frameworks & Runtimes
 ![React](https://img.shields.io/badge/REACT-00D2BE?style=for-the-badge&logo=react&logoColor=15151E)
+![Flask](https://img.shields.io/badge/FLASK-15151E?style=for-the-badge&logo=flask&logoColor=white)
 ![Node.js](https://img.shields.io/badge/NODE.JS-1E1E24?style=for-the-badge&logo=node.js&logoColor=39FF14)
 
 ### 🏁 Database, Deployment & Tools
