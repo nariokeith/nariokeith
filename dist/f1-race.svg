@@ -1,6 +1,6 @@
 <svg width="1000" height="710" viewBox="0 0 1000 710" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="title desc">
   <title id="title">nariokeith Monaco contribution circuit</title>
-  <desc id="desc">A polished 3D Monaco circuit with Hard, Medium, and Soft tyre compounds showing 46 real GitHub contributions.</desc>
+  <desc id="desc">A polished 3D Monaco circuit with Hard, Medium, and Soft tyre compounds showing 49 real GitHub contributions.</desc>
   <style>
     .title { font: 800 28px Arial, sans-serif; letter-spacing: 3px; fill: #f0f6fc; }
     .subtitle { font: 600 12px Arial, sans-serif; letter-spacing: 2px; fill: #8b949e; }
@@ -78,15 +78,15 @@
   <text x="68" y="526" class="panel-kicker">PIT WALL // TYRE STRATEGY</text>
   <text x="932" y="526" text-anchor="end" class="panel-note">REAL GITHUB TELEMETRY</text>
   <g>
-  <title>HARD: 46 TOTAL</title>
+  <title>HARD: 49 TOTAL</title>
   <ellipse cx="220" cy="658" rx="78" ry="15" fill="#020407" opacity="0.55"/>
-  <rect x="218" y="518" width="4" height="15" rx="2" fill="#d7dde6" opacity="0.94" transform="rotate(-138 220 600)"/>
-<rect x="218" y="524" width="4" height="9" rx="2" fill="#d7dde6" opacity="0.66" transform="rotate(-115 220 600)"/>
+  <rect x="218" y="519" width="4" height="14" rx="2" fill="#d7dde6" opacity="0.94" transform="rotate(-138 220 600)"/>
+<rect x="218" y="525" width="4" height="8" rx="2" fill="#d7dde6" opacity="0.65" transform="rotate(-115 220 600)"/>
 <rect x="218" y="528" width="4" height="5" rx="2" fill="#d7dde6" opacity="0.18" transform="rotate(-92 220 600)"/>
 <rect x="218" y="528" width="4" height="5" rx="2" fill="#d7dde6" opacity="0.18" transform="rotate(-69 220 600)"/>
-<rect x="218" y="524" width="4" height="9" rx="2" fill="#d7dde6" opacity="0.69" transform="rotate(-46 220 600)"/>
+<rect x="218" y="524" width="4" height="9" rx="2" fill="#d7dde6" opacity="0.68" transform="rotate(-46 220 600)"/>
 <rect x="218" y="528" width="4" height="5" rx="2" fill="#d7dde6" opacity="0.18" transform="rotate(-23 220 600)"/>
-<rect x="218" y="524" width="4" height="9" rx="2" fill="#d7dde6" opacity="0.69" transform="rotate(0 220 600)"/>
+<rect x="218" y="524" width="4" height="9" rx="2" fill="#d7dde6" opacity="0.68" transform="rotate(0 220 600)"/>
 <rect x="218" y="528" width="4" height="5" rx="2" fill="#d7dde6" opacity="0.18" transform="rotate(23 220 600)"/>
 <rect x="218" y="528" width="4" height="5" rx="2" fill="#d7dde6" opacity="0.18" transform="rotate(46 220 600)"/>
 <rect x="218" y="528" width="4" height="5" rx="2" fill="#d7dde6" opacity="0.18" transform="rotate(69 220 600)"/>
@@ -101,16 +101,16 @@
   <path d="M180 552C202 538 240 538 262 555" stroke="#303846" stroke-width="3" fill="none" opacity="0.55"/>
   <path d="M176 642C208 659 240 657 265 638" stroke="#010305" stroke-width="10" fill="none" opacity="0.85"/>
   <text x="220" y="581" text-anchor="middle" class="compound-name">HARD</text>
-  <text x="220" y="606" text-anchor="middle" class="compound-metric">46</text>
+  <text x="220" y="606" text-anchor="middle" class="compound-metric">49</text>
   <text x="220" y="625" text-anchor="middle" class="compound-label">TOTAL</text>
   <text x="220" y="683" text-anchor="middle" class="compound-sub">13 MONTH STINT</text>
 </g>
   <g>
-  <title>MEDIUM: 10 ACTIVE DAYS</title>
+  <title>MEDIUM: 11 ACTIVE DAYS</title>
   <ellipse cx="500" cy="658" rx="78" ry="15" fill="#020407" opacity="0.55"/>
   <rect x="498" y="528" width="4" height="5" rx="2" fill="#ffd12a" opacity="0.18" transform="rotate(-138 500 600)"/>
-<rect x="498" y="521" width="4" height="12" rx="2" fill="#ffd12a" opacity="0.87" transform="rotate(-127.38 500 600)"/>
-<rect x="498" y="524" width="4" height="9" rx="2" fill="#ffd12a" opacity="0.66" transform="rotate(-116.77 500 600)"/>
+<rect x="498" y="522" width="4" height="11" rx="2" fill="#ffd12a" opacity="0.85" transform="rotate(-127.38 500 600)"/>
+<rect x="498" y="525" width="4" height="8" rx="2" fill="#ffd12a" opacity="0.65" transform="rotate(-116.77 500 600)"/>
 <rect x="498" y="528" width="4" height="5" rx="2" fill="#ffd12a" opacity="0.18" transform="rotate(-106.15 500 600)"/>
 <rect x="498" y="528" width="4" height="5" rx="2" fill="#ffd12a" opacity="0.18" transform="rotate(-95.54 500 600)"/>
 <rect x="498" y="528" width="4" height="5" rx="2" fill="#ffd12a" opacity="0.18" transform="rotate(-84.92 500 600)"/>
@@ -143,7 +143,7 @@
   <path d="M460 552C482 538 520 538 542 555" stroke="#303846" stroke-width="3" fill="none" opacity="0.55"/>
   <path d="M456 642C488 659 520 657 545 638" stroke="#010305" stroke-width="10" fill="none" opacity="0.85"/>
   <text x="500" y="581" text-anchor="middle" class="compound-name">MEDIUM</text>
-  <text x="500" y="606" text-anchor="middle" class="compound-metric">10</text>
+  <text x="500" y="606" text-anchor="middle" class="compound-metric">11</text>
   <text x="500" y="625" text-anchor="middle" class="compound-label">ACTIVE DAYS</text>
   <text x="500" y="683" text-anchor="middle" class="compound-sub">5 ACTIVE MONTHS</text>
 </g>
@@ -174,11 +174,11 @@
 <rect x="778" y="528" width="4" height="5" rx="2" fill="#e10600" opacity="0.18" transform="rotate(61.86 780 600)"/>
 <rect x="778" y="528" width="4" height="5" rx="2" fill="#e10600" opacity="0.18" transform="rotate(71.38 780 600)"/>
 <rect x="778" y="528" width="4" height="5" rx="2" fill="#e10600" opacity="0.18" transform="rotate(80.9 780 600)"/>
-<rect x="778" y="528" width="4" height="5" rx="2" fill="#e10600" opacity="0.18" transform="rotate(90.41 780 600)"/>
-<rect x="778" y="524" width="4" height="9" rx="2" fill="#e10600" opacity="0.7" transform="rotate(99.93 780 600)"/>
-<rect x="778" y="511" width="4" height="22" rx="2" fill="#e10600" opacity="0.94" transform="rotate(109.45 780 600)"/>
+<rect x="778" y="524" width="4" height="9" rx="2" fill="#e10600" opacity="0.7" transform="rotate(90.41 780 600)"/>
+<rect x="778" y="511" width="4" height="22" rx="2" fill="#e10600" opacity="0.94" transform="rotate(99.93 780 600)"/>
+<rect x="778" y="524" width="4" height="9" rx="2" fill="#e10600" opacity="0.66" transform="rotate(109.45 780 600)"/>
 <rect x="778" y="524" width="4" height="9" rx="2" fill="#e10600" opacity="0.66" transform="rotate(118.97 780 600)"/>
-<rect x="778" y="524" width="4" height="9" rx="2" fill="#e10600" opacity="0.66" transform="rotate(128.48 780 600)"/>
+<rect x="778" y="523" width="4" height="10" rx="2" fill="#e10600" opacity="0.74" transform="rotate(128.48 780 600)"/>
 <rect x="778" y="528" width="4" height="5" rx="2" fill="#e10600" opacity="0.18" transform="rotate(138 780 600)"/>
   <circle cx="780" cy="600" r="64" fill="#05070a"/>
   <circle cx="780" cy="600" r="56" fill="none" stroke="#191e26" stroke-width="14"/>
