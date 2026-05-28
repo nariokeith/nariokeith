@@ -1,6 +1,6 @@
 <svg width="1000" height="420" viewBox="0 0 1000 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">nariokeith arcade contribution snake</title>
-  <desc id="desc">An arcade snake animation built from 100 real GitHub contributions. The snake grows when it eats active contribution cells.</desc>
+  <desc id="desc">An arcade snake animation built from 101 real GitHub contributions. The snake grows when it eats active contribution cells.</desc>
   <style>
     .title { font: 800 28px Arial, sans-serif; fill: #f0f6fc; }
     .hud { font: 800 13px "Courier New", monospace; letter-spacing: 1.6px; fill: #39d353; }
@@ -34,7 +34,7 @@
   <rect width="1000" height="420" rx="18" fill="url(#scanlines)"/>
   <rect x="1" y="1" width="998" height="418" rx="17" stroke="#30363d"/>
 
-  <text x="52" y="58" class="title">100 contributions in the last year</text>
+  <text x="52" y="58" class="title">101 contributions in the last year</text>
   <text x="948" y="58" text-anchor="end" class="hud">ARCADE MODE // SNAKE RUN</text>
 
   <rect x="34" y="92" width="932" height="288" rx="12" fill="url(#panel)" stroke="#30363d" stroke-width="2"/>
@@ -594,7 +594,7 @@
 <g>
     <title>2025-09-06: 2 contributions</title>
     <rect x="302" y="252" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="302" y="252" width="13" height="13" rx="3" fill="#006d32">
+    <rect x="302" y="252" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.8995;0.9025;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
@@ -946,7 +946,7 @@
 <g>
     <title>2025-11-15: 2 contributions</title>
     <rect x="472" y="252" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="472" y="252" width="13" height="13" rx="3" fill="#006d32">
+    <rect x="472" y="252" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.9266;0.9296;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
@@ -1568,7 +1568,7 @@
 <g>
     <title>2026-03-19: 2 contributions</title>
     <rect x="778" y="218" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="778" y="218" width="13" height="13" rx="3" fill="#006d32">
+    <rect x="778" y="218" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.6902;0.6932;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
@@ -1780,14 +1780,14 @@
 <g>
     <title>2026-04-28: 2 contributions</title>
     <rect x="880" y="184" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="880" y="184" width="13" height="13" rx="3" fill="#006d32">
+    <rect x="880" y="184" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.4185;0.4215;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
 <g>
     <title>2026-04-29: 5 contributions</title>
     <rect x="880" y="201" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="880" y="201" width="13" height="13" rx="3" fill="#39d353">
+    <rect x="880" y="201" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.4429;0.4459;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
@@ -1814,7 +1814,7 @@
 <g>
     <title>2026-05-04: 2 contributions</title>
     <rect x="897" y="167" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="897" y="167" width="13" height="13" rx="3" fill="#006d32">
+    <rect x="897" y="167" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1522;0.1552;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
@@ -1842,7 +1842,7 @@
 <g>
     <title>2026-05-08: 3 contributions</title>
     <rect x="897" y="235" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="897" y="235" width="13" height="13" rx="3" fill="#26a641">
+    <rect x="897" y="235" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.7255;0.7285;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
@@ -1884,14 +1884,14 @@
 <g>
     <title>2026-05-14: 4 contributions</title>
     <rect x="914" y="218" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="914" y="218" width="13" height="13" rx="3" fill="#39d353">
+    <rect x="914" y="218" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.7120;0.7150;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
 <g>
     <title>2026-05-15: 3 contributions</title>
     <rect x="914" y="235" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="914" y="235" width="13" height="13" rx="3" fill="#26a641">
+    <rect x="914" y="235" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.7228;0.7258;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
@@ -1926,7 +1926,7 @@
 <g>
     <title>2026-05-20: 2 contributions</title>
     <rect x="931" y="201" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="931" y="201" width="13" height="13" rx="3" fill="#006d32">
+    <rect x="931" y="201" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.4348;0.4378;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
@@ -1940,49 +1940,49 @@
 <g>
     <title>2026-05-22: 4 contributions</title>
     <rect x="931" y="235" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="931" y="235" width="13" height="13" rx="3" fill="#39d353">
+    <rect x="931" y="235" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.7201;0.7231;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
 <g>
     <title>2026-05-23: 4 contributions</title>
     <rect x="931" y="252" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="931" y="252" width="13" height="13" rx="3" fill="#39d353">
+    <rect x="931" y="252" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.9920;0.9950;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
 <g>
     <title>2026-05-24: 4 contributions</title>
     <rect x="948" y="150" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="948" y="150" width="13" height="13" rx="3" fill="#39d353">
+    <rect x="948" y="150" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1413;0.1443;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
 <g>
     <title>2026-05-25: 5 contributions</title>
     <rect x="948" y="167" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="948" y="167" width="13" height="13" rx="3" fill="#39d353">
+    <rect x="948" y="167" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1440;0.1470;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
 <g>
     <title>2026-05-26: 4 contributions</title>
     <rect x="948" y="184" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="948" y="184" width="13" height="13" rx="3" fill="#39d353">
+    <rect x="948" y="184" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.4293;0.4323;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
 <g>
     <title>2026-05-27: 2 contributions</title>
     <rect x="948" y="201" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="948" y="201" width="13" height="13" rx="3" fill="#006d32">
+    <rect x="948" y="201" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.4321;0.4351;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
 <g>
-    <title>2026-05-28: 5 contributions</title>
+    <title>2026-05-28: 6 contributions</title>
     <rect x="948" y="218" width="13" height="13" rx="3" fill="#161b22"/>
-    <rect x="948" y="218" width="13" height="13" rx="3" fill="#39d353">
+    <rect x="948" y="218" width="13" height="13" rx="3" fill="#0e4429">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.7174;0.7204;1" dur="18s" repeatCount="indefinite"/>
     </rect>
   </g>
@@ -2238,7 +2238,7 @@
 
   <g>
     <text x="64" y="350" class="score-label">SCORE</text>
-    <text x="64" y="368" class="score">100</text>
+    <text x="64" y="368" class="score">101</text>
     <text x="210" y="350" class="score-label">SNAKE LENGTH</text>
     <text x="210" y="368" class="score">45</text>
     <text x="414" y="350" class="score-label">ACTIVE CELLS</text>
