@@ -28,6 +28,6 @@
 
 ---
 
-## 🏆 Monaco Contribution Circuit
+## Arcade Contribution Snake
 
 ![](./dist/f1-race.svg)
