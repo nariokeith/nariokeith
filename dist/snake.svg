@@ -1,6 +1,6 @@
 <svg width="1000" height="337" viewBox="0 0 1000 337" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">nariokeith arcade contribution snake</title>
-  <desc id="desc">An arcade snake animation built from 160 real GitHub contributions. The snake grows when it eats active contribution cells.</desc>
+  <desc id="desc">An arcade snake animation built from 162 real GitHub contributions. The snake grows when it eats active contribution cells.</desc>
   <style>
     .title { font: 800 28px Arial, sans-serif; fill: #f0f6fc; }
     .hud { font: 800 13px "Courier New", monospace; letter-spacing: 1.6px; fill: #39d353; }
@@ -31,7 +31,7 @@
   <rect width="1000" height="337" rx="18" fill="url(#scanlines)"/>
   <rect x="1" y="1" width="998" height="335" rx="17" stroke="#30363d"/>
 
-  <text x="42" y="58" class="title">160 contributions in the last year</text>
+  <text x="42" y="58" class="title">162 contributions in the last year</text>
   <text x="958" y="58" text-anchor="end" class="hud">ARCADE MODE // SNAKE RUN</text>
 
   <rect x="24" y="92" width="952" height="215" rx="12" fill="url(#panel)" stroke="#30363d" stroke-width="2"/>
@@ -1982,7 +1982,7 @@
     </rect>
   </g>
 <g>
-    <title>2026-06-03: 8 contributions</title>
+    <title>2026-06-03: 10 contributions</title>
     <rect x="958" y="201" width="13" height="13" rx="3" fill="#161b22"/>
     <rect x="958" y="201" width="13" height="13" rx="3" fill="#006d32">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.0572;0.0602;1" dur="18s" repeatCount="indefinite"/>
