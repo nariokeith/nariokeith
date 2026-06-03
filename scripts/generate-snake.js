@@ -2,7 +2,7 @@ const fs = require("fs/promises");
 
 const username = process.env.USERNAME || "nariokeith";
 const token = process.env.GITHUB_TOKEN;
-const output = process.env.OUTPUT || "dist/f1-race.svg";
+const output = process.env.OUTPUT || "dist/snake.svg";
 const animationDuration = "18s";
 
 const query = `
@@ -212,38 +212,148 @@ function monthLabels(weeks) {
   );
 }
 
-function bestDay(days) {
-  return days.reduce(
-    (best, day) => (day.contributionCount > best.contributionCount ? day : best),
-    { date: "", contributionCount: 0 }
-  );
-}
-
-function formatDate(date) {
-  if (!date) return "none";
-  return date.slice(5).replace("-", ".");
-}
-
 function cellKey(col, row) {
   return `${col}:${row}`;
 }
 
+// ── Seeded PRNG (Mulberry32) — deterministic per day ────────────────────────
+function mulberry32(seed) {
+  let state = seed | 0;
+  return function () {
+    state = (state + 0x6d2b79f5) | 0;
+    let t = Math.imul(state ^ (state >>> 15), 1 | state);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function dateSeed() {
+  const now = new Date();
+  return now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
+}
+
+// ── Randomized Hamiltonian walk ─────────────────────────────────────────────
+// Produces a route that visits every cell in the grid using random directions
+// (up, down, left, right). Uses greedy DFS with backtracking and prefers cells
+// that have contributions (food) to make the animation more interesting.
 function buildRoute(weeks) {
-  const route = [];
+  const numCols = weeks.length;
+  const numRows = 7;
+  const rand = mulberry32(dateSeed());
 
-  for (let row = 0; row < 7; row += 1) {
-    const cols = [...weeks.keys()];
-    if (row % 2 === 1) cols.reverse();
-
-    cols.forEach((col) => {
-      const day = weeks[col].contributionDays.find((item) => item.weekday === row);
-      if (!day) return;
-
-      route.push({ col, row, day, key: cellKey(col, row) });
-    });
+  // Build a lookup from (col, row) → day data
+  const dayAt = new Map();
+  for (let col = 0; col < numCols; col += 1) {
+    for (const day of weeks[col].contributionDays) {
+      dayAt.set(cellKey(col, day.weekday), { col, row: day.weekday, day });
+    }
   }
 
-  return route;
+  const totalCells = dayAt.size;
+
+  // Shuffle helper
+  function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(rand() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  // Neighbors in 4 cardinal directions
+  const directions = [
+    [0, -1], // up
+    [0, 1],  // down
+    [-1, 0], // left
+    [1, 0],  // right
+  ];
+
+  function getNeighbors(col, row) {
+    const neighbors = [];
+    for (const [dc, dr] of directions) {
+      const nc = col + dc;
+      const nr = row + dr;
+      const key = cellKey(nc, nr);
+      if (dayAt.has(key)) {
+        neighbors.push({ col: nc, row: nr, key });
+      }
+    }
+    return neighbors;
+  }
+
+  // Try to build a Hamiltonian path using randomized DFS with Warnsdorff's heuristic
+  // (prefer neighbors with fewer onward moves to avoid dead ends)
+  function attemptHamiltonianWalk(startCol, startRow) {
+    const visited = new Set();
+    const route = [];
+    const startKey = cellKey(startCol, startRow);
+    const startCell = dayAt.get(startKey);
+    if (!startCell) return [];
+
+    visited.add(startKey);
+    route.push(startCell);
+
+    while (route.length < totalCells) {
+      const current = route[route.length - 1];
+      const neighbors = getNeighbors(current.col, current.row)
+        .filter((n) => !visited.has(n.key));
+
+      if (neighbors.length === 0) break;
+
+      // Warnsdorff: pick neighbor with fewest onward unvisited neighbors
+      // Tie-break: prefer cells with contributions (food), then random
+      neighbors.sort((a, b) => {
+        const aOnward = getNeighbors(a.col, a.row).filter((n) => !visited.has(n.key)).length;
+        const bOnward = getNeighbors(b.col, b.row).filter((n) => !visited.has(n.key)).length;
+        if (aOnward !== bOnward) return aOnward - bOnward;
+
+        // Prefer food cells
+        const aFood = dayAt.get(a.key).day.contributionCount > 0 ? 0 : 1;
+        const bFood = dayAt.get(b.key).day.contributionCount > 0 ? 0 : 1;
+        if (aFood !== bFood) return aFood - bFood;
+
+        return rand() - 0.5;
+      });
+
+      const next = neighbors[0];
+      visited.add(next.key);
+      route.push(dayAt.get(next.key));
+    }
+
+    return route;
+  }
+
+  // Try multiple random starting positions and pick the longest route
+  let bestRoute = [];
+  const startCandidates = [];
+
+  // Gather all valid cell positions
+  for (const cell of dayAt.values()) {
+    startCandidates.push({ col: cell.col, row: cell.row });
+  }
+
+  shuffle(startCandidates);
+
+  // Try up to 30 random starts to find a good Hamiltonian path
+  const attempts = Math.min(30, startCandidates.length);
+  for (let i = 0; i < attempts; i += 1) {
+    const start = startCandidates[i];
+    const route = attemptHamiltonianWalk(start.col, start.row);
+
+    if (route.length > bestRoute.length) {
+      bestRoute = route;
+    }
+
+    // Perfect path found — visit every cell
+    if (bestRoute.length === totalCells) break;
+  }
+
+  return bestRoute.map((cell) => ({
+    col: cell.col,
+    row: cell.row,
+    day: cell.day,
+    key: cellKey(cell.col, cell.row),
+  }));
 }
 
 function buildGameState(route) {
@@ -382,7 +492,7 @@ function snakeSegments(route, gameState, layout) {
 function legend(layout) {
   const colors = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"];
   const x = layout.gridX + layout.gridWidth - 188;
-  const y = 326;
+  const y = layout.gridY + layout.gridHeight + 24;
 
   return `<g>
   <text x="${x}" y="${y + 12}" class="muted">LESS</text>
@@ -396,23 +506,25 @@ function legend(layout) {
 </g>`;
 }
 
-function arcadeCorners() {
+function arcadeCorners(width, panelTop, panelBottom) {
+  const left = 36;
+  const right = width - 36;
+  const top = panelTop + 16;
+  const bottom = panelBottom - 16;
   return `<g opacity="0.86">
-  <path d="M36 108H86M36 108V158" stroke="#39d353" stroke-width="3"/>
-  <path d="M964 108H914M964 108V158" stroke="#39d353" stroke-width="3"/>
-  <path d="M36 378H86M36 378V328" stroke="#39d353" stroke-width="3"/>
-  <path d="M964 378H914M964 378V328" stroke="#39d353" stroke-width="3"/>
+  <path d="M${left} ${panelTop + 16}H${left + 50}M${left} ${panelTop + 16}V${panelTop + 66}" stroke="#39d353" stroke-width="3"/>
+  <path d="M${right} ${panelTop + 16}H${right - 50}M${right} ${panelTop + 16}V${panelTop + 66}" stroke="#39d353" stroke-width="3"/>
+  <path d="M${left} ${panelBottom - 16}H${left + 50}M${left} ${panelBottom - 16}V${panelBottom - 66}" stroke="#39d353" stroke-width="3"/>
+  <path d="M${right} ${panelBottom - 16}H${right - 50}M${right} ${panelBottom - 16}V${panelBottom - 66}" stroke="#39d353" stroke-width="3"/>
 </g>`;
 }
 
 function renderSvg(calendar) {
   const weeks = calendar.weeks;
-  const days = weeks.flatMap((week) => week.contributionDays);
   const route = buildRoute(weeks);
   const gameState = buildGameState(route);
-  const best = bestDay(days);
   const layout = {
-    gridX: 64,
+    gridX: 80,
     gridY: 150,
     cell: 13,
     gap: 4,
@@ -422,10 +534,10 @@ function renderSvg(calendar) {
   layout.gridHeight = 7 * layout.cell + 6 * layout.gap;
 
   const width = 1000;
-  const height = 420;
+  const panelTop = 92;
+  const panelBottom = panelTop + layout.gridHeight + 100;
+  const height = panelBottom + 30;
   const score = calendar.totalContributions;
-  const snakeLength = 6 + gameState.foodCount;
-  const activeDays = gameState.foodCount;
 
   return `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">${escapeXml(username)} arcade contribution snake</title>
@@ -433,15 +545,12 @@ function renderSvg(calendar) {
   <style>
     .title { font: 800 28px Arial, sans-serif; fill: #f0f6fc; }
     .hud { font: 800 13px "Courier New", monospace; letter-spacing: 1.6px; fill: #39d353; }
-    .label { font: 700 15px Arial, sans-serif; fill: #f0f6fc; }
     .muted { font: 700 13px Arial, sans-serif; fill: #8b949e; }
     .month { font: 700 13px Arial, sans-serif; fill: #f0f6fc; }
     .weekday { font: 700 13px Arial, sans-serif; fill: #f0f6fc; }
-    .score { font: 900 17px "Courier New", monospace; fill: #f0f6fc; }
-    .score-label { font: 800 11px "Courier New", monospace; letter-spacing: 1.5px; fill: #8b949e; }
   </style>
   <defs>
-    <linearGradient id="panel" x1="34" y1="92" x2="966" y2="380" gradientUnits="userSpaceOnUse">
+    <linearGradient id="panel" x1="34" y1="${panelTop}" x2="966" y2="${panelBottom}" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0d1117"/>
       <stop offset="1" stop-color="#070b11"/>
     </linearGradient>
@@ -466,8 +575,8 @@ function renderSvg(calendar) {
   <text x="52" y="58" class="title">${score} contributions in the last year</text>
   <text x="948" y="58" text-anchor="end" class="hud">ARCADE MODE // SNAKE RUN</text>
 
-  <rect x="34" y="92" width="932" height="288" rx="12" fill="url(#panel)" stroke="#30363d" stroke-width="2"/>
-  ${arcadeCorners()}
+  <rect x="34" y="${panelTop}" width="932" height="${panelBottom - panelTop}" rx="12" fill="url(#panel)" stroke="#30363d" stroke-width="2"/>
+  ${arcadeCorners(width, panelTop, panelBottom)}
 
   ${monthLabels(weeks)
     .map(
@@ -478,9 +587,9 @@ function renderSvg(calendar) {
     )
     .join("\n")}
 
-  <text x="48" y="${coord(1, layout.gridY, layout.step) + 12}" class="weekday">Mon</text>
-  <text x="48" y="${coord(3, layout.gridY, layout.step) + 12}" class="weekday">Wed</text>
-  <text x="48" y="${coord(5, layout.gridY, layout.step) + 12}" class="weekday">Fri</text>
+  <text x="74" y="${coord(1, layout.gridY, layout.step) + 12}" text-anchor="end" class="weekday">Mon</text>
+  <text x="74" y="${coord(3, layout.gridY, layout.step) + 12}" text-anchor="end" class="weekday">Wed</text>
+  <text x="74" y="${coord(5, layout.gridY, layout.step) + 12}" text-anchor="end" class="weekday">Fri</text>
 
   <g>
     ${contributionCells(weeks, gameState.eatenStepByKey, route.length, layout)}
@@ -491,20 +600,6 @@ function renderSvg(calendar) {
   </g>
 
   ${legend(layout)}
-
-  <g>
-    <text x="64" y="350" class="score-label">SCORE</text>
-    <text x="64" y="368" class="score">${score}</text>
-    <text x="210" y="350" class="score-label">SNAKE LENGTH</text>
-    <text x="210" y="368" class="score">${snakeLength}</text>
-    <text x="414" y="350" class="score-label">ACTIVE CELLS</text>
-    <text x="414" y="368" class="score">${activeDays}</text>
-    <text x="616" y="350" class="score-label">BEST DAY</text>
-    <text x="616" y="368" class="score">${formatDate(best.date)} / ${best.contributionCount}</text>
-    <text x="936" y="368" text-anchor="end" class="hud">PRESS START
-      <animate attributeName="opacity" values="1;0.28;1" dur="1.2s" repeatCount="indefinite"/>
-    </text>
-  </g>
 </svg>
 `;
 }
