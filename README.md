@@ -28,4 +28,4 @@
 
 ---
 
-![Snake Contribution Graph](dist/snake.svg)
+![Snake Contribution Graph](dist/snake.svg?v=2)
