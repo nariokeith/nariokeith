@@ -507,8 +507,8 @@ function legend(layout) {
 }
 
 function arcadeCorners(width, panelTop, panelBottom) {
-  const left = 36;
-  const right = width - 36;
+  const left = 26;
+  const right = width - 26;
   const top = panelTop + 16;
   const bottom = panelBottom - 16;
   return `<g opacity="0.86">
@@ -524,7 +524,7 @@ function renderSvg(calendar) {
   const route = buildRoute(weeks);
   const gameState = buildGameState(route);
   const layout = {
-    gridX: 80,
+    gridX: 74,
     gridY: 150,
     cell: 13,
     gap: 4,
@@ -550,7 +550,7 @@ function renderSvg(calendar) {
     .weekday { font: 700 13px Arial, sans-serif; fill: #f0f6fc; }
   </style>
   <defs>
-    <linearGradient id="panel" x1="34" y1="${panelTop}" x2="966" y2="${panelBottom}" gradientUnits="userSpaceOnUse">
+    <linearGradient id="panel" x1="24" y1="${panelTop}" x2="976" y2="${panelBottom}" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0d1117"/>
       <stop offset="1" stop-color="#070b11"/>
     </linearGradient>
@@ -572,10 +572,10 @@ function renderSvg(calendar) {
   <rect width="${width}" height="${height}" rx="18" fill="url(#scanlines)"/>
   <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="17" stroke="#30363d"/>
 
-  <text x="52" y="58" class="title">${score} contributions in the last year</text>
-  <text x="948" y="58" text-anchor="end" class="hud">ARCADE MODE // SNAKE RUN</text>
+  <text x="42" y="58" class="title">${score} contributions in the last year</text>
+  <text x="958" y="58" text-anchor="end" class="hud">ARCADE MODE // SNAKE RUN</text>
 
-  <rect x="34" y="${panelTop}" width="932" height="${panelBottom - panelTop}" rx="12" fill="url(#panel)" stroke="#30363d" stroke-width="2"/>
+  <rect x="24" y="${panelTop}" width="952" height="${panelBottom - panelTop}" rx="12" fill="url(#panel)" stroke="#30363d" stroke-width="2"/>
   ${arcadeCorners(width, panelTop, panelBottom)}
 
   ${monthLabels(weeks)
@@ -587,9 +587,9 @@ function renderSvg(calendar) {
     )
     .join("\n")}
 
-  <text x="74" y="${coord(1, layout.gridY, layout.step) + 12}" text-anchor="end" class="weekday">Mon</text>
-  <text x="74" y="${coord(3, layout.gridY, layout.step) + 12}" text-anchor="end" class="weekday">Wed</text>
-  <text x="74" y="${coord(5, layout.gridY, layout.step) + 12}" text-anchor="end" class="weekday">Fri</text>
+  <text x="68" y="${coord(1, layout.gridY, layout.step) + 12}" text-anchor="end" class="weekday">Mon</text>
+  <text x="68" y="${coord(3, layout.gridY, layout.step) + 12}" text-anchor="end" class="weekday">Wed</text>
+  <text x="68" y="${coord(5, layout.gridY, layout.step) + 12}" text-anchor="end" class="weekday">Fri</text>
 
   <g>
     ${contributionCells(weeks, gameState.eatenStepByKey, route.length, layout)}
